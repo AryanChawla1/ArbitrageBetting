@@ -152,6 +152,40 @@ Frontend: React/Vue?
 
 ### Installation
 
+After cloning:
+
+```
+cd ./backend
+npm install
+cd ../frontend
+npm install
+```
+
 ### Running Program
+
+After installing:
+
+Backend
+
+```
+cd ./backend
+npm start
+```
+
+Frontend
+
+```
+cd ./frontend
+npm run dev
+```
+
+### Testing Program
+
+After installing:
+
+```
+cd ./backend
+npm test
+```
 
 ### Using Program

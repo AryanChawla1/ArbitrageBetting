@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for ArbitrageBetting",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node Test/test_index.js"
+  },
+  "dependencies": {
+    "assert": "^2.1.0",
+    "express": "^4.21.2"
+  }
+}

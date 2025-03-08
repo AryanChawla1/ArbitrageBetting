@@ -32,4 +32,14 @@ function determineStakes(odds, stake) {
   return stakes;
 }
 
-module.exports = { isArbitrage, determineStakes };
+function decimalToAmerican(decimalOddsList) {
+  return decimalOddsList.map((odds) => {
+    if (odds >= 2.0) {
+      return Math.round((odds - 1) * 100);
+    } else {
+      return Math.round(-100 / (odds - 1));
+    }
+  });
+}
+
+module.exports = { isArbitrage, determineStakes, decimalToAmerican };

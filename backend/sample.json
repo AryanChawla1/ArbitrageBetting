@@ -1,49 +1,32 @@
 [
   {
-    "id": "2fe45aeabb7e6c2699d575686a8e8862",
-    "sport_key": "baseball_mlb",
-    "sport_title": "MLB",
-    "commence_time": "2025-03-18T10:10:00Z",
-    "home_team": "Chicago Cubs",
-    "away_team": "Los Angeles Dodgers",
+    "id": "33e852b036ab436285a82f337e32e959",
+    "sport_key": "basketball_nba",
+    "sport_title": "NBA",
+    "commence_time": "2025-03-08T23:10:00Z",
+    "home_team": "Charlotte Hornets",
+    "away_team": "Brooklyn Nets",
     "bookmakers": [
       {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-03-06T21:43:53Z",
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://sportsbook.fanduel.com/basketball/nba/brooklyn-nets-%40-charlotte-hornets-34099562",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-03-06T21:43:53Z",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
             "outcomes": [
               {
-                "name": "Chicago Cubs",
-                "price": 2.43
+                "name": "Brooklyn Nets",
+                "price": 1.53,
+                "link": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.485125185&selectionId=6500320"
               },
               {
-                "name": "Los Angeles Dodgers",
-                "price": 1.64
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-03-06T21:43:53Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-03-06T21:43:53Z",
-            "outcomes": [
-              {
-                "name": "Chicago Cubs",
-                "price": 2.43
-              },
-              {
-                "name": "Los Angeles Dodgers",
-                "price": 1.64
+                "name": "Charlotte Hornets",
+                "price": 2.6,
+                "link": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.485125185&selectionId=8622709"
               }
             ]
           }
@@ -52,19 +35,198 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-03-06T21:43:53Z",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sportsbook.draftkings.com/event/31929419",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-03-06T21:43:53Z",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
             "outcomes": [
               {
-                "name": "Chicago Cubs",
-                "price": 2.4
+                "name": "Brooklyn Nets",
+                "price": 1.49,
+                "link": "https://sportsbook.draftkings.com/event/31929419?outcomes=0ML78959434_3"
               },
               {
-                "name": "Los Angeles Dodgers",
-                "price": 1.6
+                "name": "Charlotte Hornets",
+                "price": 2.7,
+                "link": "https://sportsbook.draftkings.com/event/31929419?outcomes=0ML78959434_1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "hardrockbet",
+        "title": "Hard Rock Bet",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://app.hardrock.bet/home/competition/nba/3224145609197617273",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Brooklyn Nets",
+                "price": 1.5,
+                "link": "https://app.hardrock.bet/?deep_link_value=betslip/6688669686543679653"
+              },
+              {
+                "name": "Charlotte Hornets",
+                "price": 2.65,
+                "link": "https://app.hardrock.bet/?deep_link_value=betslip/5133238965240594597"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "windcreek",
+        "title": "Wind Creek",
+        "last_update": "2025-03-08T19:27:59Z",
+        "link": "https://play.windcreekcasino.com/sports/sports/event/474938/basketball/united-states/nba/brooklyn-nets-at-charlotte-hornets",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:59Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Brooklyn Nets",
+                "price": 1.45,
+                "link": null
+              },
+              {
+                "name": "Charlotte Hornets",
+                "price": 2.75,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "espnbet",
+        "title": "ESPN BET",
+        "last_update": "2025-03-08T19:27:59Z",
+        "link": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/466f0d09-4522-4894-bdce-42f4840f384b",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:59Z",
+            "link": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/466f0d09-4522-4894-bdce-42f4840f384b/section/lines",
+            "outcomes": [
+              {
+                "name": "Brooklyn Nets",
+                "price": 1.5,
+                "link": null
+              },
+              {
+                "name": "Charlotte Hornets",
+                "price": 2.7,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490637239",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Brooklyn Nets",
+                "price": 1.51,
+                "link": null
+              },
+              {
+                "name": "Charlotte Hornets",
+                "price": 2.7,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "lowvig",
+        "title": "LowVig.ag",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490637239",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Brooklyn Nets",
+                "price": 1.51,
+                "link": null
+              },
+              {
+                "name": "Charlotte Hornets",
+                "price": 2.7,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.{state}.betmgm.com/en/sports/events/brooklyn-nets-at-charlotte-hornets-17072882",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Brooklyn Nets",
+                "price": 1.48,
+                "link": "https://sports.{state}.betmgm.com/en/sports?options=17072882-1250157616--734219005&type=Single"
+              },
+              {
+                "name": "Charlotte Hornets",
+                "price": 2.7,
+                "link": "https://sports.{state}.betmgm.com/en/sports?options=17072882-1250157616--734219004&type=Single"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betus",
+        "title": "BetUS",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": null,
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Brooklyn Nets",
+                "price": 1.5,
+                "link": null
+              },
+              {
+                "name": "Charlotte Hornets",
+                "price": 2.7,
+                "link": null
               }
             ]
           }
@@ -73,61 +235,23 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-03-06T21:43:53Z",
+        "last_update": "2025-03-08T19:20:54Z",
+        "link": "https://www.bovada.lv/sports/basketball/nba/brooklyn-nets-charlotte-hornets-202503081800",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-03-06T21:43:53Z",
+            "last_update": "2025-03-08T19:20:54Z",
+            "link": null,
             "outcomes": [
               {
-                "name": "Chicago Cubs",
-                "price": 2.38
+                "name": "Brooklyn Nets",
+                "price": 1.54,
+                "link": null
               },
               {
-                "name": "Los Angeles Dodgers",
-                "price": 1.61
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betparx",
-        "title": "betPARX",
-        "last_update": "2025-03-06T21:43:54Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-03-06T21:43:54Z",
-            "outcomes": [
-              {
-                "name": "Chicago Cubs",
-                "price": 2.43
-              },
-              {
-                "name": "Los Angeles Dodgers",
-                "price": 1.56
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "ballybet",
-        "title": "Bally Bet",
-        "last_update": "2025-03-06T21:43:54Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-03-06T21:43:54Z",
-            "outcomes": [
-              {
-                "name": "Chicago Cubs",
-                "price": 2.43
-              },
-              {
-                "name": "Los Angeles Dodgers",
-                "price": 1.56
+                "name": "Charlotte Hornets",
+                "price": 2.6,
+                "link": null
               }
             ]
           }
@@ -136,103 +260,73 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-03-06T21:43:53Z",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436758",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-03-06T21:43:53Z",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
             "outcomes": [
               {
-                "name": "Chicago Cubs",
-                "price": 2.43
+                "name": "Brooklyn Nets",
+                "price": 1.49,
+                "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436758?coupon={pickType}|3668380023|{wagerAmount}"
               },
               {
-                "name": "Los Angeles Dodgers",
-                "price": 1.56
+                "name": "Charlotte Hornets",
+                "price": 2.7,
+                "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436758?coupon={pickType}|3668380021|{wagerAmount}"
               }
             ]
           }
         ]
       },
       {
-        "key": "betus",
-        "title": "BetUS",
-        "last_update": "2025-03-06T21:43:53Z",
+        "key": "betparx",
+        "title": "betPARX",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://{state}.betparx.com/kambi#event/1021436758",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-03-06T21:43:53Z",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
             "outcomes": [
               {
-                "name": "Chicago Cubs",
-                "price": 2.38
+                "name": "Brooklyn Nets",
+                "price": 1.49,
+                "link": null
               },
               {
-                "name": "Los Angeles Dodgers",
-                "price": 1.65
+                "name": "Charlotte Hornets",
+                "price": 2.7,
+                "link": null
               }
             ]
           }
         ]
       },
       {
-        "key": "fliff",
-        "title": "Fliff",
-        "last_update": "2025-03-06T21:43:53Z",
+        "key": "ballybet",
+        "title": "Bally Bet",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://play.ballybet.com/sports#event/1021436758",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-03-06T21:43:53Z",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
             "outcomes": [
               {
-                "name": "Chicago Cubs",
-                "price": 2.3
+                "name": "Brooklyn Nets",
+                "price": 1.49,
+                "link": null
               },
               {
-                "name": "Los Angeles Dodgers",
-                "price": 1.56
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "espnbet",
-        "title": "ESPN BET",
-        "last_update": "2025-03-06T21:43:54Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-03-06T21:43:54Z",
-            "outcomes": [
-              {
-                "name": "Chicago Cubs",
-                "price": 2.4
-              },
-              {
-                "name": "Los Angeles Dodgers",
-                "price": 1.61
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-03-06T21:43:54Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-03-06T21:43:54Z",
-            "outcomes": [
-              {
-                "name": "Chicago Cubs",
-                "price": 2.26
-              },
-              {
-                "name": "Los Angeles Dodgers",
-                "price": 1.68
+                "name": "Charlotte Hornets",
+                "price": 2.7,
+                "link": null
               }
             ]
           }
@@ -241,50 +335,33 @@
     ]
   },
   {
-    "id": "132275d0a599a241c4d616faf3b366ee",
-    "sport_key": "baseball_mlb",
-    "sport_title": "MLB",
-    "commence_time": "2025-03-19T10:10:00Z",
-    "home_team": "Chicago Cubs",
-    "away_team": "Los Angeles Dodgers",
+    "id": "7080c86d26fb2e75b344b134b4059fc2",
+    "sport_key": "basketball_nba",
+    "sport_title": "NBA",
+    "commence_time": "2025-03-09T00:10:00Z",
+    "home_team": "Houston Rockets",
+    "away_team": "New Orleans Pelicans",
     "bookmakers": [
       {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-03-06T21:43:53Z",
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://sportsbook.fanduel.com/basketball/nba/new-orleans-pelicans-%40-houston-rockets-34099563",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-03-06T21:43:53Z",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
             "outcomes": [
               {
-                "name": "Chicago Cubs",
-                "price": 2.4
+                "name": "Houston Rockets",
+                "price": 1.29,
+                "link": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.485125192&selectionId=237488"
               },
               {
-                "name": "Los Angeles Dodgers",
-                "price": 1.65
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-03-06T21:43:53Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-03-06T21:43:53Z",
-            "outcomes": [
-              {
-                "name": "Chicago Cubs",
-                "price": 2.4
-              },
-              {
-                "name": "Los Angeles Dodgers",
-                "price": 1.65
+                "name": "New Orleans Pelicans",
+                "price": 3.8,
+                "link": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.485125192&selectionId=7379341"
               }
             ]
           }
@@ -293,61 +370,73 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-03-06T21:43:53Z",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sportsbook.draftkings.com/event/31929420",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-03-06T21:43:53Z",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
             "outcomes": [
               {
-                "name": "Chicago Cubs",
-                "price": 2.36
+                "name": "Houston Rockets",
+                "price": 1.31,
+                "link": "https://sportsbook.draftkings.com/event/31929420?outcomes=0ML78959435_1"
               },
               {
-                "name": "Los Angeles Dodgers",
-                "price": 1.62
+                "name": "New Orleans Pelicans",
+                "price": 3.6,
+                "link": "https://sportsbook.draftkings.com/event/31929420?outcomes=0ML78959435_3"
               }
             ]
           }
         ]
       },
       {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2025-03-06T21:43:53Z",
+        "key": "hardrockbet",
+        "title": "Hard Rock Bet",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://app.hardrock.bet/home/competition/nba/3061609409468432505",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-03-06T21:43:53Z",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
             "outcomes": [
               {
-                "name": "Chicago Cubs",
-                "price": 2.34
+                "name": "Houston Rockets",
+                "price": 1.29,
+                "link": "https://app.hardrock.bet/?deep_link_value=betslip/68119780357046433"
               },
               {
-                "name": "Los Angeles Dodgers",
-                "price": 1.62
+                "name": "New Orleans Pelicans",
+                "price": 3.6,
+                "link": "https://app.hardrock.bet/?deep_link_value=betslip/7050951002595000481"
               }
             ]
           }
         ]
       },
       {
-        "key": "betus",
-        "title": "BetUS",
-        "last_update": "2025-03-06T21:43:53Z",
+        "key": "windcreek",
+        "title": "Wind Creek",
+        "last_update": "2025-03-08T19:27:59Z",
+        "link": "https://play.windcreekcasino.com/sports/sports/event/474963/basketball/united-states/nba/new-orleans-pelicans-at-houston-rockets",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-03-06T21:43:53Z",
+            "last_update": "2025-03-08T19:27:59Z",
+            "link": null,
             "outcomes": [
               {
-                "name": "Chicago Cubs",
-                "price": 2.38
+                "name": "Houston Rockets",
+                "price": 1.3,
+                "link": null
               },
               {
-                "name": "Los Angeles Dodgers",
-                "price": 1.65
+                "name": "New Orleans Pelicans",
+                "price": 3.5,
+                "link": null
               }
             ]
           }
@@ -356,40 +445,1623 @@
       {
         "key": "espnbet",
         "title": "ESPN BET",
-        "last_update": "2025-03-06T21:43:54Z",
+        "last_update": "2025-03-08T19:27:59Z",
+        "link": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/07ab10d4-61c9-49b3-8bd8-d96a2af0a450",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-03-06T21:43:54Z",
+            "last_update": "2025-03-08T19:27:59Z",
+            "link": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/07ab10d4-61c9-49b3-8bd8-d96a2af0a450/section/lines",
             "outcomes": [
               {
-                "name": "Chicago Cubs",
-                "price": 2.3
+                "name": "Houston Rockets",
+                "price": 1.29,
+                "link": null
               },
               {
-                "name": "Los Angeles Dodgers",
-                "price": 1.65
+                "name": "New Orleans Pelicans",
+                "price": 3.7,
+                "link": null
               }
             ]
           }
         ]
       },
       {
-        "key": "fliff",
-        "title": "Fliff",
-        "last_update": "2025-03-06T21:43:53Z",
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490637242",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-03-06T21:43:53Z",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
             "outcomes": [
               {
-                "name": "Chicago Cubs",
-                "price": 2.25
+                "name": "Houston Rockets",
+                "price": 1.32,
+                "link": null
               },
               {
-                "name": "Los Angeles Dodgers",
-                "price": 1.59
+                "name": "New Orleans Pelicans",
+                "price": 3.65,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "lowvig",
+        "title": "LowVig.ag",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490637242",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Houston Rockets",
+                "price": 1.32,
+                "link": null
+              },
+              {
+                "name": "New Orleans Pelicans",
+                "price": 3.65,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.{state}.betmgm.com/en/sports/events/new-orleans-pelicans-at-houston-rockets-17072883",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Houston Rockets",
+                "price": 1.31,
+                "link": "https://sports.{state}.betmgm.com/en/sports?options=17072883-1250157619--734219002&type=Single"
+              },
+              {
+                "name": "New Orleans Pelicans",
+                "price": 3.6,
+                "link": "https://sports.{state}.betmgm.com/en/sports?options=17072883-1250157619--734219003&type=Single"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betus",
+        "title": "BetUS",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": null,
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Houston Rockets",
+                "price": 1.3,
+                "link": null
+              },
+              {
+                "name": "New Orleans Pelicans",
+                "price": 3.7,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-03-08T19:20:54Z",
+        "link": "https://www.bovada.lv/sports/basketball/nba/new-orleans-pelicans-houston-rockets-202503081900",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:20:54Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Houston Rockets",
+                "price": 1.32,
+                "link": null
+              },
+              {
+                "name": "New Orleans Pelicans",
+                "price": 3.55,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436757",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Houston Rockets",
+                "price": 1.29,
+                "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436757?coupon={pickType}|3668342141|{wagerAmount}"
+              },
+              {
+                "name": "New Orleans Pelicans",
+                "price": 3.75,
+                "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436757?coupon={pickType}|3668342144|{wagerAmount}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betparx",
+        "title": "betPARX",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://{state}.betparx.com/kambi#event/1021436757",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Houston Rockets",
+                "price": 1.29,
+                "link": null
+              },
+              {
+                "name": "New Orleans Pelicans",
+                "price": 3.7,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ballybet",
+        "title": "Bally Bet",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://play.ballybet.com/sports#event/1021436757",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Houston Rockets",
+                "price": 1.29,
+                "link": null
+              },
+              {
+                "name": "New Orleans Pelicans",
+                "price": 3.75,
+                "link": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3cd5af5010f635f1bb2492b9bff15864",
+    "sport_key": "basketball_nba",
+    "sport_title": "NBA",
+    "commence_time": "2025-03-09T00:40:00Z",
+    "home_team": "Atlanta Hawks",
+    "away_team": "Indiana Pacers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://sportsbook.fanduel.com/basketball/nba/indiana-pacers-%40-atlanta-hawks-34099565",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Atlanta Hawks",
+                "price": 2.32,
+                "link": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.485125211&selectionId=237490"
+              },
+              {
+                "name": "Indiana Pacers",
+                "price": 1.64,
+                "link": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.485125211&selectionId=237481"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sportsbook.draftkings.com/event/31929421",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Atlanta Hawks",
+                "price": 2.3,
+                "link": "https://sportsbook.draftkings.com/event/31929421?outcomes=0ML78959436_1"
+              },
+              {
+                "name": "Indiana Pacers",
+                "price": 1.65,
+                "link": "https://sportsbook.draftkings.com/event/31929421?outcomes=0ML78959436_3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "hardrockbet",
+        "title": "Hard Rock Bet",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://app.hardrock.bet/home/competition/nba/8862809761806811156",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Atlanta Hawks",
+                "price": 2.35,
+                "link": "https://app.hardrock.bet/?deep_link_value=betslip/4928518215205388453"
+              },
+              {
+                "name": "Indiana Pacers",
+                "price": 1.62,
+                "link": "https://app.hardrock.bet/?deep_link_value=betslip/4741618830669512869"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "windcreek",
+        "title": "Wind Creek",
+        "last_update": "2025-03-08T19:27:59Z",
+        "link": "https://play.windcreekcasino.com/sports/sports/event/474968/basketball/united-states/nba/indiana-pacers-at-atlanta-hawks",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:59Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Atlanta Hawks",
+                "price": 2.25,
+                "link": null
+              },
+              {
+                "name": "Indiana Pacers",
+                "price": 1.65,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "espnbet",
+        "title": "ESPN BET",
+        "last_update": "2025-03-08T19:27:59Z",
+        "link": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/90dfdccd-b236-4e17-949c-c049a4f800c7",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:59Z",
+            "link": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/90dfdccd-b236-4e17-949c-c049a4f800c7/section/lines",
+            "outcomes": [
+              {
+                "name": "Atlanta Hawks",
+                "price": 2.25,
+                "link": null
+              },
+              {
+                "name": "Indiana Pacers",
+                "price": 1.67,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490637244",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Atlanta Hawks",
+                "price": 2.33,
+                "link": null
+              },
+              {
+                "name": "Indiana Pacers",
+                "price": 1.65,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "lowvig",
+        "title": "LowVig.ag",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490637244",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Atlanta Hawks",
+                "price": 2.33,
+                "link": null
+              },
+              {
+                "name": "Indiana Pacers",
+                "price": 1.65,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.{state}.betmgm.com/en/sports/events/indiana-pacers-at-atlanta-hawks-17072884",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Atlanta Hawks",
+                "price": 2.35,
+                "link": "https://sports.{state}.betmgm.com/en/sports?options=17072884-1250157622--734219000&type=Single"
+              },
+              {
+                "name": "Indiana Pacers",
+                "price": 1.62,
+                "link": "https://sports.{state}.betmgm.com/en/sports?options=17072884-1250157622--734219001&type=Single"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betus",
+        "title": "BetUS",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": null,
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Atlanta Hawks",
+                "price": 2.34,
+                "link": null
+              },
+              {
+                "name": "Indiana Pacers",
+                "price": 1.65,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-03-08T19:20:54Z",
+        "link": "https://www.bovada.lv/sports/basketball/nba/indiana-pacers-atlanta-hawks-202503081930",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:20:54Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Atlanta Hawks",
+                "price": 2.35,
+                "link": null
+              },
+              {
+                "name": "Indiana Pacers",
+                "price": 1.62,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436779",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Atlanta Hawks",
+                "price": 2.25,
+                "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436779?coupon={pickType}|3668362508|{wagerAmount}"
+              },
+              {
+                "name": "Indiana Pacers",
+                "price": 1.68,
+                "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436779?coupon={pickType}|3668362511|{wagerAmount}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ballybet",
+        "title": "Bally Bet",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://play.ballybet.com/sports#event/1021436779",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Atlanta Hawks",
+                "price": 2.25,
+                "link": null
+              },
+              {
+                "name": "Indiana Pacers",
+                "price": 1.68,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betparx",
+        "title": "betPARX",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://{state}.betparx.com/kambi#event/1021436779",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Atlanta Hawks",
+                "price": 2.23,
+                "link": null
+              },
+              {
+                "name": "Indiana Pacers",
+                "price": 1.67,
+                "link": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fbc4ecb5bfbfdf70e843716906756839",
+    "sport_key": "basketball_nba",
+    "sport_title": "NBA",
+    "commence_time": "2025-03-09T00:40:00Z",
+    "home_team": "Toronto Raptors",
+    "away_team": "Washington Wizards",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://sportsbook.fanduel.com/basketball/nba/washington-wizards-%40-toronto-raptors-34099564",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Toronto Raptors",
+                "price": 1.61,
+                "link": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.485125197&selectionId=237476"
+              },
+              {
+                "name": "Washington Wizards",
+                "price": 2.38,
+                "link": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.485125197&selectionId=237485"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sportsbook.draftkings.com/event/31929422",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Toronto Raptors",
+                "price": 1.59,
+                "link": "https://sportsbook.draftkings.com/event/31929422?outcomes=0ML78959437_1"
+              },
+              {
+                "name": "Washington Wizards",
+                "price": 2.42,
+                "link": "https://sportsbook.draftkings.com/event/31929422?outcomes=0ML78959437_3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "windcreek",
+        "title": "Wind Creek",
+        "last_update": "2025-03-08T19:27:59Z",
+        "link": "https://play.windcreekcasino.com/sports/sports/event/474969/basketball/united-states/nba/washington-wizards-at-toronto-raptors",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:59Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Toronto Raptors",
+                "price": 1.6,
+                "link": null
+              },
+              {
+                "name": "Washington Wizards",
+                "price": 2.35,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "espnbet",
+        "title": "ESPN BET",
+        "last_update": "2025-03-08T19:27:59Z",
+        "link": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/3cf8d1fc-27a6-4e10-9582-19d35ee0af2a",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:59Z",
+            "link": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/3cf8d1fc-27a6-4e10-9582-19d35ee0af2a/section/lines",
+            "outcomes": [
+              {
+                "name": "Toronto Raptors",
+                "price": 1.59,
+                "link": null
+              },
+              {
+                "name": "Washington Wizards",
+                "price": 2.45,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "hardrockbet",
+        "title": "Hard Rock Bet",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://app.hardrock.bet/home/competition/nba/5353603451254997111",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Toronto Raptors",
+                "price": 1.62,
+                "link": "https://app.hardrock.bet/?deep_link_value=betslip/4269429142599762087"
+              },
+              {
+                "name": "Washington Wizards",
+                "price": 2.35,
+                "link": "https://app.hardrock.bet/?deep_link_value=betslip/1580780165059575975"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-03-08T19:20:54Z",
+        "link": "https://www.bovada.lv/sports/basketball/nba/washington-wizards-toronto-raptors-202503081930",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:20:54Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Toronto Raptors",
+                "price": 1.59,
+                "link": null
+              },
+              {
+                "name": "Washington Wizards",
+                "price": 2.45,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.{state}.betmgm.com/en/sports/events/washington-wizards-at-toronto-raptors-17072885",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Toronto Raptors",
+                "price": 1.59,
+                "link": "https://sports.{state}.betmgm.com/en/sports?options=17072885-1250157625--734218998&type=Single"
+              },
+              {
+                "name": "Washington Wizards",
+                "price": 2.4,
+                "link": "https://sports.{state}.betmgm.com/en/sports?options=17072885-1250157625--734218999&type=Single"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436769",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Toronto Raptors",
+                "price": 1.62,
+                "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436769?coupon={pickType}|3668342208|{wagerAmount}"
+              },
+              {
+                "name": "Washington Wizards",
+                "price": 2.35,
+                "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436769?coupon={pickType}|3668342209|{wagerAmount}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ballybet",
+        "title": "Bally Bet",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://play.ballybet.com/sports#event/1021436769",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Toronto Raptors",
+                "price": 1.62,
+                "link": null
+              },
+              {
+                "name": "Washington Wizards",
+                "price": 2.35,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betparx",
+        "title": "betPARX",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://{state}.betparx.com/kambi#event/1021436769",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Toronto Raptors",
+                "price": 1.61,
+                "link": null
+              },
+              {
+                "name": "Washington Wizards",
+                "price": 2.33,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490637238",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Toronto Raptors",
+                "price": 1.61,
+                "link": null
+              },
+              {
+                "name": "Washington Wizards",
+                "price": 2.45,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "lowvig",
+        "title": "LowVig.ag",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490637238",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Toronto Raptors",
+                "price": 1.61,
+                "link": null
+              },
+              {
+                "name": "Washington Wizards",
+                "price": 2.45,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betus",
+        "title": "BetUS",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": null,
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Toronto Raptors",
+                "price": 1.62,
+                "link": null
+              },
+              {
+                "name": "Washington Wizards",
+                "price": 2.38,
+                "link": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5aa6e6a92cbbc6db4836fd21bc1a0dd6",
+    "sport_key": "basketball_nba",
+    "sport_title": "NBA",
+    "commence_time": "2025-03-09T01:10:00Z",
+    "home_team": "Miami Heat",
+    "away_team": "Chicago Bulls",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://sportsbook.fanduel.com/basketball/nba/chicago-bulls-%40-miami-heat-34099566",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Chicago Bulls",
+                "price": 2.64,
+                "link": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.485125214&selectionId=237494"
+              },
+              {
+                "name": "Miami Heat",
+                "price": 1.51,
+                "link": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.485125214&selectionId=237486"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sportsbook.draftkings.com/event/31929423",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Chicago Bulls",
+                "price": 2.6,
+                "link": "https://sportsbook.draftkings.com/event/31929423?outcomes=0ML78959438_3"
+              },
+              {
+                "name": "Miami Heat",
+                "price": 1.52,
+                "link": "https://sportsbook.draftkings.com/event/31929423?outcomes=0ML78959438_1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "hardrockbet",
+        "title": "Hard Rock Bet",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://app.hardrock.bet/home/competition/nba/2522202920575565944",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Chicago Bulls",
+                "price": 2.6,
+                "link": "https://app.hardrock.bet/?deep_link_value=betslip/7196673985908310192"
+              },
+              {
+                "name": "Miami Heat",
+                "price": 1.53,
+                "link": "https://app.hardrock.bet/?deep_link_value=betslip/3456434495377113264"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "windcreek",
+        "title": "Wind Creek",
+        "last_update": "2025-03-08T19:27:59Z",
+        "link": "https://play.windcreekcasino.com/sports/sports/event/474979/basketball/united-states/nba/chicago-bulls-at-miami-heat",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:59Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Chicago Bulls",
+                "price": 2.55,
+                "link": null
+              },
+              {
+                "name": "Miami Heat",
+                "price": 1.5,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "espnbet",
+        "title": "ESPN BET",
+        "last_update": "2025-03-08T19:27:59Z",
+        "link": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/c32ac8fa-9f03-46cf-bf57-0276430f1da3",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:59Z",
+            "link": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/c32ac8fa-9f03-46cf-bf57-0276430f1da3/section/lines",
+            "outcomes": [
+              {
+                "name": "Chicago Bulls",
+                "price": 2.65,
+                "link": null
+              },
+              {
+                "name": "Miami Heat",
+                "price": 1.51,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "lowvig",
+        "title": "LowVig.ag",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490637243",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Chicago Bulls",
+                "price": 2.65,
+                "link": null
+              },
+              {
+                "name": "Miami Heat",
+                "price": 1.53,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490637243",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Chicago Bulls",
+                "price": 2.65,
+                "link": null
+              },
+              {
+                "name": "Miami Heat",
+                "price": 1.53,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.{state}.betmgm.com/en/sports/events/chicago-bulls-at-miami-heat-17072886",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Chicago Bulls",
+                "price": 2.65,
+                "link": "https://sports.{state}.betmgm.com/en/sports?options=17072886-1250157628--734218997&type=Single"
+              },
+              {
+                "name": "Miami Heat",
+                "price": 1.5,
+                "link": "https://sports.{state}.betmgm.com/en/sports?options=17072886-1250157628--734218996&type=Single"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-03-08T19:20:54Z",
+        "link": "https://www.bovada.lv/sports/basketball/nba/chicago-bulls-miami-heat-202503082000",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:20:54Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Chicago Bulls",
+                "price": 2.7,
+                "link": null
+              },
+              {
+                "name": "Miami Heat",
+                "price": 1.5,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436796",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Chicago Bulls",
+                "price": 2.48,
+                "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436796?coupon={pickType}|3668380448|{wagerAmount}"
+              },
+              {
+                "name": "Miami Heat",
+                "price": 1.56,
+                "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436796?coupon={pickType}|3668380446|{wagerAmount}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ballybet",
+        "title": "Bally Bet",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://play.ballybet.com/sports#event/1021436796",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Chicago Bulls",
+                "price": 2.48,
+                "link": null
+              },
+              {
+                "name": "Miami Heat",
+                "price": 1.56,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betparx",
+        "title": "betPARX",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://{state}.betparx.com/kambi#event/1021436796",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Chicago Bulls",
+                "price": 2.45,
+                "link": null
+              },
+              {
+                "name": "Miami Heat",
+                "price": 1.56,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betus",
+        "title": "BetUS",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": null,
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Chicago Bulls",
+                "price": 2.63,
+                "link": null
+              },
+              {
+                "name": "Miami Heat",
+                "price": 1.53,
+                "link": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0cddb6d1c291ea1c614e0513eca82c54",
+    "sport_key": "basketball_nba",
+    "sport_title": "NBA",
+    "commence_time": "2025-03-09T01:10:00Z",
+    "home_team": "Milwaukee Bucks",
+    "away_team": "Orlando Magic",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://sportsbook.fanduel.com/basketball/nba/orlando-magic-%40-milwaukee-bucks-34099567",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Milwaukee Bucks",
+                "price": 1.56,
+                "link": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.485125240&selectionId=237477"
+              },
+              {
+                "name": "Orlando Magic",
+                "price": 2.52,
+                "link": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.485125240&selectionId=237475"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sportsbook.draftkings.com/event/31929424",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Milwaukee Bucks",
+                "price": 1.52,
+                "link": "https://sportsbook.draftkings.com/event/31929424?outcomes=0ML78959439_1"
+              },
+              {
+                "name": "Orlando Magic",
+                "price": 2.6,
+                "link": "https://sportsbook.draftkings.com/event/31929424?outcomes=0ML78959439_3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "hardrockbet",
+        "title": "Hard Rock Bet",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://app.hardrock.bet/home/competition/nba/7677493225851715691",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Milwaukee Bucks",
+                "price": 1.54,
+                "link": "https://app.hardrock.bet/?deep_link_value=betslip/5342381461416444095"
+              },
+              {
+                "name": "Orlando Magic",
+                "price": 2.55,
+                "link": "https://app.hardrock.bet/?deep_link_value=betslip/8614246590701109439"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "windcreek",
+        "title": "Wind Creek",
+        "last_update": "2025-03-08T19:27:59Z",
+        "link": "https://play.windcreekcasino.com/sports/sports/event/474980/basketball/united-states/nba/orlando-magic-at-milwaukee-bucks",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:59Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Milwaukee Bucks",
+                "price": 1.5,
+                "link": null
+              },
+              {
+                "name": "Orlando Magic",
+                "price": 2.55,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "espnbet",
+        "title": "ESPN BET",
+        "last_update": "2025-03-08T19:27:59Z",
+        "link": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/62a2f447-4314-46c0-9841-7b1280ae10ff",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:59Z",
+            "link": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/62a2f447-4314-46c0-9841-7b1280ae10ff/section/lines",
+            "outcomes": [
+              {
+                "name": "Milwaukee Bucks",
+                "price": 1.54,
+                "link": null
+              },
+              {
+                "name": "Orlando Magic",
+                "price": 2.55,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "lowvig",
+        "title": "LowVig.ag",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490637241",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Milwaukee Bucks",
+                "price": 1.53,
+                "link": null
+              },
+              {
+                "name": "Orlando Magic",
+                "price": 2.65,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490637241",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Milwaukee Bucks",
+                "price": 1.53,
+                "link": null
+              },
+              {
+                "name": "Orlando Magic",
+                "price": 2.65,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.{state}.betmgm.com/en/sports/events/orlando-magic-at-milwaukee-bucks-17072887",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Milwaukee Bucks",
+                "price": 1.53,
+                "link": "https://sports.{state}.betmgm.com/en/sports?options=17072887-1250157631--734218994&type=Single"
+              },
+              {
+                "name": "Orlando Magic",
+                "price": 2.54,
+                "link": "https://sports.{state}.betmgm.com/en/sports?options=17072887-1250157631--734218995&type=Single"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betus",
+        "title": "BetUS",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": null,
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Milwaukee Bucks",
+                "price": 1.54,
+                "link": null
+              },
+              {
+                "name": "Orlando Magic",
+                "price": 2.59,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-03-08T19:20:54Z",
+        "link": "https://www.bovada.lv/sports/basketball/nba/orlando-magic-milwaukee-bucks-202503082000",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:20:54Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Milwaukee Bucks",
+                "price": 1.54,
+                "link": null
+              },
+              {
+                "name": "Orlando Magic",
+                "price": 2.6,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436780",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Milwaukee Bucks",
+                "price": 1.53,
+                "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436780?coupon={pickType}|3668409846|{wagerAmount}"
+              },
+              {
+                "name": "Orlando Magic",
+                "price": 2.6,
+                "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436780?coupon={pickType}|3668409849|{wagerAmount}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ballybet",
+        "title": "Bally Bet",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://play.ballybet.com/sports#event/1021436780",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Milwaukee Bucks",
+                "price": 1.53,
+                "link": null
+              },
+              {
+                "name": "Orlando Magic",
+                "price": 2.6,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betparx",
+        "title": "betPARX",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://{state}.betparx.com/kambi#event/1021436780",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Milwaukee Bucks",
+                "price": 1.51,
+                "link": null
+              },
+              {
+                "name": "Orlando Magic",
+                "price": 2.55,
+                "link": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c17047e1327d628c58735ff818b485e5",
+    "sport_key": "basketball_nba",
+    "sport_title": "NBA",
+    "commence_time": "2025-03-09T01:30:00Z",
+    "home_team": "Boston Celtics",
+    "away_team": "Los Angeles Lakers",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sportsbook.draftkings.com/event/31929425",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Boston Celtics",
+                "price": 1.35,
+                "link": "https://sportsbook.draftkings.com/event/31929425?outcomes=0ML78959440_1"
+              },
+              {
+                "name": "Los Angeles Lakers",
+                "price": 3.3,
+                "link": "https://sportsbook.draftkings.com/event/31929425?outcomes=0ML78959440_3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "espnbet",
+        "title": "ESPN BET",
+        "last_update": "2025-03-08T19:27:59Z",
+        "link": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/390a901b-abea-4ff2-9d14-5463f632ec0f",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:59Z",
+            "link": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/390a901b-abea-4ff2-9d14-5463f632ec0f/section/lines",
+            "outcomes": [
+              {
+                "name": "Boston Celtics",
+                "price": 1.36,
+                "link": null
+              },
+              {
+                "name": "Los Angeles Lakers",
+                "price": 3.3,
+                "link": null
               }
             ]
           }
@@ -398,19 +2070,608 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-03-06T21:43:54Z",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://sportsbook.fanduel.com/basketball/nba/los-angeles-lakers-%40-boston-celtics-34099569",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-03-06T21:43:54Z",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
             "outcomes": [
               {
-                "name": "Chicago Cubs",
-                "price": 2.22
+                "name": "Boston Celtics",
+                "price": 1.36,
+                "link": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.485125248&selectionId=60427"
               },
               {
-                "name": "Los Angeles Dodgers",
-                "price": 1.69
+                "name": "Los Angeles Lakers",
+                "price": 3.25,
+                "link": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.485125248&selectionId=5368712"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "hardrockbet",
+        "title": "Hard Rock Bet",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://app.hardrock.bet/home/competition/nba/1466901693279764596",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Boston Celtics",
+                "price": 1.33,
+                "link": "https://app.hardrock.bet/?deep_link_value=betslip/8922710133656256674"
+              },
+              {
+                "name": "Los Angeles Lakers",
+                "price": 3.25,
+                "link": "https://app.hardrock.bet/?deep_link_value=betslip/6132730164500234402"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "windcreek",
+        "title": "Wind Creek",
+        "last_update": "2025-03-08T19:27:59Z",
+        "link": "https://play.windcreekcasino.com/sports/sports/event/474988/basketball/united-states/nba/los-angeles-lakers-at-boston-celtics",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:59Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Boston Celtics",
+                "price": 1.35,
+                "link": null
+              },
+              {
+                "name": "Los Angeles Lakers",
+                "price": 3.2,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "lowvig",
+        "title": "LowVig.ag",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490637240",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Boston Celtics",
+                "price": 1.36,
+                "link": null
+              },
+              {
+                "name": "Los Angeles Lakers",
+                "price": 3.3,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490637240",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Boston Celtics",
+                "price": 1.36,
+                "link": null
+              },
+              {
+                "name": "Los Angeles Lakers",
+                "price": 3.3,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.{state}.betmgm.com/en/sports/events/los-angeles-lakers-at-boston-celtics-17072888",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Boston Celtics",
+                "price": 1.35,
+                "link": "https://sports.{state}.betmgm.com/en/sports?options=17072888-1250157634--734218992&type=Single"
+              },
+              {
+                "name": "Los Angeles Lakers",
+                "price": 3.25,
+                "link": "https://sports.{state}.betmgm.com/en/sports?options=17072888-1250157634--734218993&type=Single"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betus",
+        "title": "BetUS",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": null,
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Boston Celtics",
+                "price": 1.36,
+                "link": null
+              },
+              {
+                "name": "Los Angeles Lakers",
+                "price": 3.35,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-03-08T19:20:54Z",
+        "link": "https://www.bovada.lv/sports/basketball/nba/los-angeles-lakers-boston-celtics-202503082030",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:20:54Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Boston Celtics",
+                "price": 1.36,
+                "link": null
+              },
+              {
+                "name": "Los Angeles Lakers",
+                "price": 3.25,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436766",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Boston Celtics",
+                "price": 1.35,
+                "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436766?coupon={pickType}|3668380842|{wagerAmount}"
+              },
+              {
+                "name": "Los Angeles Lakers",
+                "price": 3.35,
+                "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436766?coupon={pickType}|3668380844|{wagerAmount}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ballybet",
+        "title": "Bally Bet",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://play.ballybet.com/sports#event/1021436766",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Boston Celtics",
+                "price": 1.35,
+                "link": null
+              },
+              {
+                "name": "Los Angeles Lakers",
+                "price": 3.35,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betparx",
+        "title": "betPARX",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://{state}.betparx.com/kambi#event/1021436766",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Boston Celtics",
+                "price": 1.34,
+                "link": null
+              },
+              {
+                "name": "Los Angeles Lakers",
+                "price": 3.3,
+                "link": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1df34e2cad9a6ba37e0cc821cddb9228",
+    "sport_key": "basketball_nba",
+    "sport_title": "NBA",
+    "commence_time": "2025-03-09T01:40:00Z",
+    "home_team": "Golden State Warriors",
+    "away_team": "Detroit Pistons",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://sportsbook.fanduel.com/basketball/nba/detroit-pistons-%40-golden-state-warriors-34099568",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Detroit Pistons",
+                "price": 2.9,
+                "link": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.485125244&selectionId=237474"
+              },
+              {
+                "name": "Golden State Warriors",
+                "price": 1.43,
+                "link": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.485125244&selectionId=237493"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sportsbook.draftkings.com/event/31929426",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Detroit Pistons",
+                "price": 2.9,
+                "link": "https://sportsbook.draftkings.com/event/31929426?outcomes=0ML78959441_3"
+              },
+              {
+                "name": "Golden State Warriors",
+                "price": 1.43,
+                "link": "https://sportsbook.draftkings.com/event/31929426?outcomes=0ML78959441_1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "hardrockbet",
+        "title": "Hard Rock Bet",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://app.hardrock.bet/home/competition/nba/9200445438822187054",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Detroit Pistons",
+                "price": 2.8,
+                "link": "https://app.hardrock.bet/?deep_link_value=betslip/7464625820000846018"
+              },
+              {
+                "name": "Golden State Warriors",
+                "price": 1.43,
+                "link": "https://app.hardrock.bet/?deep_link_value=betslip/4502383165097902274"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "espnbet",
+        "title": "ESPN BET",
+        "last_update": "2025-03-08T19:27:59Z",
+        "link": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/fadda7ae-dca2-4f9a-b618-f5eed7cce21b",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:59Z",
+            "link": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/fadda7ae-dca2-4f9a-b618-f5eed7cce21b/section/lines",
+            "outcomes": [
+              {
+                "name": "Detroit Pistons",
+                "price": 2.8,
+                "link": null
+              },
+              {
+                "name": "Golden State Warriors",
+                "price": 1.47,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "windcreek",
+        "title": "Wind Creek",
+        "last_update": "2025-03-08T19:27:59Z",
+        "link": "https://play.windcreekcasino.com/sports/sports/event/474989/basketball/united-states/nba/detroit-pistons-at-golden-state-warriors",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:59Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Detroit Pistons",
+                "price": 2.75,
+                "link": null
+              },
+              {
+                "name": "Golden State Warriors",
+                "price": 1.45,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "lowvig",
+        "title": "LowVig.ag",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490637237",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Detroit Pistons",
+                "price": 2.85,
+                "link": null
+              },
+              {
+                "name": "Golden State Warriors",
+                "price": 1.47,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490637237",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Detroit Pistons",
+                "price": 2.85,
+                "link": null
+              },
+              {
+                "name": "Golden State Warriors",
+                "price": 1.47,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://sports.{state}.betmgm.com/en/sports/events/detroit-pistons-at-golden-state-warriors-17072889",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Detroit Pistons",
+                "price": 2.85,
+                "link": "https://sports.{state}.betmgm.com/en/sports?options=17072889-1250157637--734218991&type=Single"
+              },
+              {
+                "name": "Golden State Warriors",
+                "price": 1.44,
+                "link": "https://sports.{state}.betmgm.com/en/sports?options=17072889-1250157637--734218990&type=Single"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betus",
+        "title": "BetUS",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": null,
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Detroit Pistons",
+                "price": 2.83,
+                "link": null
+              },
+              {
+                "name": "Golden State Warriors",
+                "price": 1.47,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-03-08T19:20:54Z",
+        "link": "https://www.bovada.lv/sports/basketball/nba/detroit-pistons-golden-state-warriors-202503082030",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:20:54Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Detroit Pistons",
+                "price": 2.85,
+                "link": null
+              },
+              {
+                "name": "Golden State Warriors",
+                "price": 1.44,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-03-08T19:27:57Z",
+        "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436770",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:57Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Detroit Pistons",
+                "price": 2.75,
+                "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436770?coupon={pickType}|3668410011|{wagerAmount}"
+              },
+              {
+                "name": "Golden State Warriors",
+                "price": 1.48,
+                "link": "https://{state}.betrivers.com/?page=sportsbook#event/1021436770?coupon={pickType}|3668410008|{wagerAmount}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ballybet",
+        "title": "Bally Bet",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://play.ballybet.com/sports#event/1021436770",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Detroit Pistons",
+                "price": 2.75,
+                "link": null
+              },
+              {
+                "name": "Golden State Warriors",
+                "price": 1.48,
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betparx",
+        "title": "betPARX",
+        "last_update": "2025-03-08T19:27:58Z",
+        "link": "https://{state}.betparx.com/kambi#event/1021436770",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-03-08T19:27:58Z",
+            "link": null,
+            "outcomes": [
+              {
+                "name": "Detroit Pistons",
+                "price": 2.7,
+                "link": null
+              },
+              {
+                "name": "Golden State Warriors",
+                "price": 1.48,
+                "link": null
               }
             ]
           }

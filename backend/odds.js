@@ -1,6 +1,5 @@
 const axios = require("axios");
 const dotenv = require("dotenv");
-const { response } = require("express");
 
 // var odds = require("./sample.json");
 dotenv.config();
@@ -9,6 +8,7 @@ const sportsUrl = "https://api.the-odds-api.com/v4/sports";
 const interestedSports = ["NHL", "NBA", "MLB"];
 const regions = "us,us2";
 const markets = "h2h";
+const includeLinks = "true";
 
 async function getSports() {
   try {
@@ -45,6 +45,7 @@ async function getOdds(sports) {
               apiKey,
               regions,
               markets,
+              includeLinks,
             },
           });
           return response.data;
@@ -83,12 +84,16 @@ function getBestOdds(odds) {
             const name = outcome.name;
             const price = outcome.price;
             const source = bookmaker.key;
-            const link = outcome.link;
+            const directLink = outcome.link || "unavailable";
+            const marketLink = h2hMarket.link || "unavailable";
+            const eventLink = bookmaker.link || "unavailable";
 
             if (!bestOdds[name] || price > bestOdds[name]) {
               bestOdds[name] = price;
               bestOdds[`source_${name}`] = source;
-              bestOdds[`link_${name}`] = link;
+              bestOdds[`directLink_${name}`] = directLink;
+              bestOdds[`marketLink_${name}`] = marketLink;
+              bestOdds[`eventLink_${name}`] = eventLink;
             }
           });
         }

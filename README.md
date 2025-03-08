@@ -8,6 +8,8 @@ Program that detects and notifies users of possible arbitrages within online spo
 
 The program will be built into different components: Core Logic, Account Configuration, Odd Retrieving, Frontend.
 
+The core logic and odd retrieving components work together to get the data prepared.
+
 #### Core Logic
 
 The core logic handles the algorithm behind detecting and calculating the profit gain. Calculating arbitrage betting opportunities is quite simple and can be done internally with one sportsbook or externally via comparing multiple sportsbooks. Firstly, let's explain the mathematics behind it.

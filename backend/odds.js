@@ -71,7 +71,12 @@ function getBestOdds(odds) {
   return odds
     .map((match) => {
       const bestOdds = {};
-      if (!match || !match.bookmakers || !Array.isArray(match.bookmakers)) {
+      if (
+        !match ||
+        !match.bookmakers ||
+        !Array.isArray(match.bookmakers) ||
+        match.bookmakers.length === 0
+      ) {
         return null;
       }
       match.bookmakers.forEach((bookmaker) => {

@@ -66,10 +66,10 @@ async function getOdds(sports) {
   }
 }
 
-function getMinOdds(odds) {
+function getBestOdds(odds) {
   return odds
     .map((match) => {
-      const lowestOdds = {};
+      const bestOdds = {};
       if (!match || !match.bookmakers || !Array.isArray(match.bookmakers)) {
         return null;
       }
@@ -82,9 +82,13 @@ function getMinOdds(odds) {
           h2hMarket.outcomes.forEach((outcome) => {
             const name = outcome.name;
             const price = outcome.price;
+            const source = bookmaker.key;
+            const link = outcome.link;
 
-            if (!lowestOdds[name] || price < lowestOdds[name]) {
-              lowestOdds[name] = price;
+            if (!bestOdds[name] || price > bestOdds[name]) {
+              bestOdds[name] = price;
+              bestOdds[`source_${name}`] = source;
+              bestOdds[`link_${name}`] = link;
             }
           });
         }
@@ -94,10 +98,10 @@ function getMinOdds(odds) {
         id: match.id,
         home_team: match.home_team,
         away_team: match.away_team,
-        lowest_odds: lowestOdds,
+        best_odds: bestOdds,
       };
     })
     .filter(Boolean);
 }
 
-module.exports = { getSports, getOdds, getMinOdds };
+module.exports = { getSports, getOdds, getBestOdds };

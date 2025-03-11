@@ -19,6 +19,10 @@ wss.on("connection", (ws) => {
     console.log("Client disconnected");
     clients.delete(ws);
   });
+
+  ws.on("error", (err) => {
+    console.error(err);
+  })
 });
 
 function sendUpdates() {
@@ -26,7 +30,15 @@ function sendUpdates() {
 
   clients.forEach((client) => {
     if (client.readyState === WebSocket.OPEN) {
-      client.send(JSON.stringify(data));
+      try {
+        client.send(JSON.stringify(data));
+        console.log(data)
+      } catch (err) {
+        console.error(err);
+        clients.delete(client);
+      }
+    } else {
+      clients.delete(client);
     }
   });
 }

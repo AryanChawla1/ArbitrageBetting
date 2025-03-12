@@ -1,6 +1,8 @@
 const { isArbitrage, determineStakes, decimalToAmerican } = require("./core");
 const { getSports, getOdds, getBestOdds } = require("./odds");
 
+var revenue = 0;
+
 function filterOdds(odds) {
   return odds.filter((odd) => {
     const oddsList = Object.values(odd.best_odds).filter(
@@ -27,7 +29,9 @@ function getStakesAndAmerican(odds) {
     for (let i = 0; i < stakesList.length; i++) {
       odd.best_odds[`stake_${namesList[i]}`] = stakesList[i];
       odd.best_odds[`American_${namesList[i]}`] = americanlist[i];
+      revenue += stakesList[i];
     }
+    revenue -= 100;
   });
 
   return odds;
@@ -48,4 +52,4 @@ async function prepareData() {
   return finalOdds;
 }
 
-module.exports = { prepareData };
+module.exports = { prepareData, revenue };

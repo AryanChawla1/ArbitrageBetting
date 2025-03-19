@@ -89,9 +89,24 @@ function getBestOdds(odds) {
             const name = outcome.name;
             const price = outcome.price;
             const source = bookmaker.key;
-            const directLink = outcome.link || "unavailable";
-            const marketLink = h2hMarket.link || "unavailable";
-            const eventLink = bookmaker.link || "unavailable";
+            const directLink =
+              !outcome.link ||
+              outcome.link.includes("{") ||
+              outcome.link.includes("}")
+                ? "unavailable"
+                : outcome.link;
+            const marketLink =
+              !h2hMarket.link ||
+              h2hMarket.link.includes("{") ||
+              h2hMarket.link.includes("}")
+                ? "unavailable"
+                : h2hMarket.link;
+            const eventLink =
+              !bookmaker.link ||
+              bookmaker.link.includes("{") ||
+              bookmaker.link.includes("}")
+                ? "unavailable"
+                : bookmaker.link;
 
             if (!bestOdds[name] || price > bestOdds[name]) {
               bestOdds[name] = price;

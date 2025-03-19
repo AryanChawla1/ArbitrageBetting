@@ -1,5 +1,5 @@
 const { isArbitrage, determineStakes } = require("../core");
-const { prepareData, revenue } = require("./data");
+const { prepareData, revenue } = require("../data");
 const assert = require("assert");
 
 // function for core asserts based on pass/fail
@@ -25,4 +25,7 @@ coreTest([1.9, 1.9], 100, false);
 coreTest([2.1, 2], 30, true);
 coreTest([4.0, 4.0, 2.0], 100, false);
 
-console.log(await prepareData());
+(async () => {
+  const ans = await prepareData();
+  console.log(ans);
+})();

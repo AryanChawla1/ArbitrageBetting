@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="flex flex-col gap-5 items-center justify-center">
-      <h1 className="text-2xl font-bold text-center">
+      <h1 className="text-s lg:text-2xl font-bold text-center">
         Arbitrage Opportunities
       </h1>
       <p>WebSocket Status: {readyState === 1 ? "Connected" : "Disconnected"}</p>

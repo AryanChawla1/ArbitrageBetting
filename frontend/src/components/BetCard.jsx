@@ -24,11 +24,11 @@ export default function BetCard({}) {
   };
 
   return (
-    <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden w-1/2 justify-center">
+    <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden w-full md:w-3/4 lg:w-1/2 mx-auto justify-center">
       <div className=" text-center p-4">
         <h2 className="text-2xl font-bold">Bet Card</h2>
       </div>
-      <div className="flex flex-row justify-around">
+      <div className="flex flex-col md:flex-row justify-around">
         <div className="p-4 text-center grow-1">
           <p className="text-gray-700 font-bold text-xl">Los Angeles Lakers</p>
           <p className="text-gray-700 font-semibold text-l">-200 (1.5)</p>
@@ -48,10 +48,10 @@ export default function BetCard({}) {
         </div>
         <div className="flex items-center justify-evenly grow-2 grid grid-cols-2 place-items-center">
           <div>
-            <p className="font-bold text-3xl">{lStake}</p>
+            <p className="font-bold text-xs lg:text-l xl:text-3xl">{lStake}</p>
           </div>
           <div>
-            <p className="font-bold text-3xl">{rStake}</p>
+            <p className="font-bold text-xs lg:text-l xl:text-3xl">{rStake}</p>
           </div>
           <div className="flex flex-col items-center gap-4 col-span-2">
             <input

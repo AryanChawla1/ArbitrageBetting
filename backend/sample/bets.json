@@ -1,0 +1,65 @@
+[
+  {
+    "id": "3c6cf214d6081f7a1ae7271e7ce50c15",
+    "home_team": "New Jersey Devils",
+    "away_team": "Ottawa Senators",
+    "best_odds": {
+      "New Jersey Devils": 1.88,
+      "stake_New Jersey Devils": 50.41,
+      "American_New Jersey Devils": -140,
+      "stake_Ottawa Senators": 49.59,
+      "American_Ottawa Senators": 200,
+      "source_New Jersey Devils": "betonlineag",
+      "directLink_New Jersey Devils": "unavailable",
+      "marketLink_New Jersey Devils": "unavailable",
+      "eventLink_New Jersey Devils": "https://sports.betonline.ag/sportsbook/hockey/nhl/game/490650142",
+      "Ottawa Senators": 2.02,
+      "source_Ottawa Senators": "fanduel",
+      "directLink_Ottawa Senators": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.490572712&selectionId=25599",
+      "marketLink_Ottawa Senators": "unavailable",
+      "eventLink_Ottawa Senators": "https://sportsbook.fanduel.com/ice-hockey/nhl/ottawa-senators-%40-new-jersey-devils-34146139"
+    }
+  },
+  {
+    "id": "2c972fe3e18a4943cd6812a428b4f99e",
+    "home_team": "Vegas Golden Knights",
+    "away_team": "Detroit Red Wings",
+    "best_odds": {
+      "Detroit Red Wings": 2.82,
+      "stake_Vegas Golden Knights": 50.0,
+      "American_Vegas Golden Knights": -143,
+      "stake_Detroit Red Wings": 50.0,
+      "American_Detroit Red Wings": 209,
+      "source_Detroit Red Wings": "betonlineag",
+      "directLink_Detroit Red Wings": "unavailable",
+      "marketLink_Detroit Red Wings": "unavailable",
+      "eventLink_Detroit Red Wings": "https://sports.betonline.ag/sportsbook/hockey/nhl/game/490650140",
+      "Vegas Golden Knights": 1.49,
+      "source_Vegas Golden Knights": "betonlineag",
+      "directLink_Vegas Golden Knights": "unavailable",
+      "marketLink_Vegas Golden Knights": "unavailable",
+      "eventLink_Vegas Golden Knights": "https://sports.betonline.ag/sportsbook/hockey/nhl/game/490650140"
+    }
+  },
+  {
+    "id": "add06f84a38dcb31f112dcac005fe48f",
+    "home_team": "Edmonton Oilers",
+    "away_team": "Seattle Kraken",
+    "best_odds": {
+      "Edmonton Oilers": 1.61,
+      "stake_Edmonton Oilers": 41.0,
+      "American_Edmonton Oilers": -250,
+      "stake_Seattle Kraken": 59.0,
+      "American_Seattle Kraken": -100,
+      "source_Edmonton Oilers": "betrivers",
+      "directLink_Edmonton Oilers": "unavailable",
+      "marketLink_Edmonton Oilers": "unavailable",
+      "eventLink_Edmonton Oilers": "unavailable",
+      "Seattle Kraken": 2.42,
+      "source_Seattle Kraken": "draftkings",
+      "directLink_Seattle Kraken": "https://sportsbook.draftkings.com/event/32000035?outcomes=0ML79139606_3",
+      "marketLink_Seattle Kraken": "unavailable",
+      "eventLink_Seattle Kraken": "https://sportsbook.draftkings.com/event/32000035"
+    }
+  }
+]

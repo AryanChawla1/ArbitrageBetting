@@ -1,14 +1,31 @@
 import { React, useState } from "react";
 
-export default function BetCard({}) {
+//TODO: Secondary Link logic.
+
+export default function BetCard({ bet }) {
+  const { home_team, away_team, best_odds } = bet;
+
+  const homeOdds = best_odds[home_team];
+  const awayOdds = best_odds[away_team];
+  const homeAmerican = best_odds[`American_${home_team}`];
+  const awayAmerican = best_odds[`American_${away_team}`];
+  const homeStake = best_odds[`stake_${home_team}`];
+  const awayStake = best_odds[`stake_${away_team}`];
+  const homeSource = best_odds[`source_${home_team}`];
+  const awaySource = best_odds[`source_${away_team}`];
+  const homeDirectLink = best_odds[`directLink_${home_team}`];
+  const awayDirectLink = best_odds[`directLink_${away_team}`];
+  const homeMarketLink = best_odds[`marketLink_${home_team}`];
+  const awayMarketLink = best_odds[`marketLink_${away_team}`];
+  const homeEventLink = best_odds[`eventLink_${home_team}`];
+  const awayEventLink = best_odds[`eventLink_${away_team}`];
+
   const min = 1;
   const max = 1000;
   const step = 1;
-  const oLStake = 50.41;
-  const oRStake = 49.59;
   const [value, setValue] = useState(100);
-  const [lStake, setLStake] = useState(oLStake);
-  const [rStake, setRStake] = useState(oRStake);
+  const [lStake, setLStake] = useState(homeStake);
+  const [rStake, setRStake] = useState(awayStake);
 
   const handleChange = (e) => {
     let newValue = Number(e.target.value);
@@ -16,8 +33,8 @@ export default function BetCard({}) {
     if (newValue < min) newValue = min;
 
     const ratio = 100 / newValue;
-    const newL = oLStake / ratio;
-    const newR = oRStake / ratio;
+    const newL = homeStake / ratio;
+    const newR = awayStake / ratio;
     setLStake(newL.toFixed(2));
     setRStake(newR.toFixed(2));
     setValue(newValue);
@@ -30,14 +47,21 @@ export default function BetCard({}) {
       </div>
       <div className="flex flex-col md:flex-row justify-around">
         <div className="p-4 text-center grow-1">
-          <p className="text-gray-700 font-bold text-xl">Los Angeles Lakers</p>
-          <p className="text-gray-700 font-semibold text-l">-200 (1.5)</p>
-          <p className="text-gray-700">Fanduel</p>
+          <p className="text-gray-700 font-bold text-xl">{home_team}</p>
+          <p className="text-gray-700 font-semibold text-l">
+            {homeAmerican} ({homeOdds})
+          </p>
+          <p className="text-gray-700">{homeSource}</p>
           <a
-            href="https://google.com"
-            className="bg-blue-500 text-white text-center py-2 px-4 rounded-md hover:bg-blue-600 block mb-2"
+            href={homeDirectLink !== "unavailable" ? homeDirectLink : "#"}
+            target="_blank"
+            className={` ${
+              homeDirectLink === "unavailable"
+                ? "bg-gray-400 cursor-not-allowed hover:bg-red-800"
+                : "bg-blue-500"
+            } text-white text-center py-2 px-4 rounded-md hover:bg-blue-600 block mb-2`}
           >
-            Direct Link
+            {homeDirectLink !== "unavailable" ? "Direct Link" : "Unavailable"}
           </a>
           <a
             href="https://google.com"
@@ -75,14 +99,21 @@ export default function BetCard({}) {
           </div>
         </div>
         <div className="p-4 text-center grow-1">
-          <p className="text-gray-700 font-bold text-xl">Toronto Raptors</p>
-          <p className="text-gray-700 font-semibold text-l">-400 (1.25)</p>
-          <p className="text-gray-700">Bet 365</p>
+          <p className="text-gray-700 font-bold text-xl">{away_team}</p>
+          <p className="text-gray-700 font-semibold text-l">
+            {awayAmerican} ({awayOdds})
+          </p>
+          <p className="text-gray-700">{awaySource}</p>
           <a
-            href="https://google.com"
-            className="bg-blue-500 text-white text-center py-2 px-4 rounded-md hover:bg-blue-600 block mb-2"
+            href={awayDirectLink !== "unavailable" ? awayDirectLink : "#"}
+            target="_blank"
+            className={` ${
+              awayDirectLink === "unavailable"
+                ? "bg-gray-400 cursor-not-allowed hover:bg-red-800"
+                : "bg-blue-500"
+            } text-white text-center py-2 px-4 rounded-md hover:bg-blue-600 block mb-2`}
           >
-            Direct Link
+            {awayDirectLink !== "unavailable" ? "Direct Link" : "Unavailable"}
           </a>
           <a
             href="https://google.com"

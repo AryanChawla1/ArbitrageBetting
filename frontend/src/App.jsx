@@ -14,9 +14,14 @@ function App() {
     }
   );
 
+  const [bets, setBets] = useState([]);
+
   useEffect(() => {
-    if (lastMessage) {
-      console.log(lastMessage.data);
+    if (lastMessage && readyState === 1) {
+      const data = JSON.parse(lastMessage.data);
+      console.log(data);
+      console.log(data.length);
+      setBets(data);
     }
   }, [lastMessage]);
 
@@ -26,8 +31,9 @@ function App() {
         Arbitrage Opportunities
       </h1>
       <p>WebSocket Status: {readyState === 1 ? "Connected" : "Disconnected"}</p>
-      <BetCard />
-      <BetCard />
+      {bets.map((bet, index) => {
+        return <BetCard key={index} bet={bet} />;
+      })}
     </div>
   );
 }

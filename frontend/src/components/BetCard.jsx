@@ -1,7 +1,5 @@
 import { React, useState } from "react";
 
-//TODO: Secondary Link logic.
-
 export default function BetCard({ bet }) {
   const { home_team, away_team, best_odds } = bet;
 

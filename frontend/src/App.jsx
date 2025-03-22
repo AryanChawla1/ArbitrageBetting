@@ -1,40 +1,51 @@
 import { useState, useEffect } from "react";
-import useWebSocket from "react-use-websocket";
-import BetCard from "./components/BetCard";
+import { AuthProvider, useAuth } from "./context/AuthContext";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import LoginPage from "./pages/LoginPage";
+import Dashboard from "./pages/Dashboard";
+
+const PrivateRoute = ({ children }) => {
+  const { session } = useAuth();
+  return session ? children : <Navigate to="/login" replace />;
+};
+
+//TODO: Make login page functional with sign-up
+//TODO: Make use of log out within components as well as useAuth
+//TODO: Add Stripe
+//TODO: Make a home page rather then redirecting
+
+const AuthRedirect = () => {
+  const { session } = useAuth();
+  return session ? (
+    <Navigate to="/dashboard" replace />
+  ) : (
+    <Navigate to="/login" replace />
+  );
+};
 
 function App() {
-  const { sendMessage, lastMessage, readyState } = useWebSocket(
-    "ws://localhost:3000",
-    {
-      onOpen: () => console.log("connected"),
-      onClose: () => console.log("disconnected"),
-      onError: (event) => console.error(event),
-      shouldReconnect: () => true,
-      share: true,
-    }
-  );
-
-  const [bets, setBets] = useState([]);
-
-  useEffect(() => {
-    if (lastMessage && readyState === 1) {
-      const data = JSON.parse(lastMessage.data);
-      console.log(data);
-      console.log(data.length);
-      setBets(data);
-    }
-  }, [lastMessage]);
-
   return (
-    <div className="flex flex-col gap-5 items-center justify-center">
-      <h1 className="text-s lg:text-2xl font-bold text-center">
-        Arbitrage Opportunities
-      </h1>
-      <p>WebSocket Status: {readyState === 1 ? "Connected" : "Disconnected"}</p>
-      {bets.map((bet, index) => {
-        return <BetCard key={index} bet={bet} />;
-      })}
-    </div>
+    <AuthProvider>
+      <Router>
+        <Routes>
+          <Route path="/login" element={<LoginPage />} />
+          <Route
+            path="/dashboard"
+            element={
+              <PrivateRoute>
+                <Dashboard />
+              </PrivateRoute>
+            }
+          />
+          <Route path="*" element={<AuthRedirect />} />
+        </Routes>
+      </Router>
+    </AuthProvider>
   );
 }
 

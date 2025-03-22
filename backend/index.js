@@ -11,12 +11,14 @@ const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
 const clients = new Set();
+var data = [];
 
 let sample = require("./sample/bets.json");
 
 wss.on("connection", (ws) => {
   console.log("New client connected");
   clients.add(ws);
+  ws.send(JSON.stringify(data));
 
   ws.on("close", () => {
     console.log("Client disconnected");
@@ -30,7 +32,7 @@ wss.on("connection", (ws) => {
 
 async function sendUpdates() {
   // const data = await prepareData();
-  const data = sample;
+  data = sample;
   clients.forEach((client) => {
     if (client.readyState === WebSocket.OPEN) {
       try {

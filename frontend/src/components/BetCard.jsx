@@ -20,12 +20,17 @@ export default function BetCard({ bet }) {
   const homeEventLink = best_odds[`eventLink_${home_team}`];
   const awayEventLink = best_odds[`eventLink_${away_team}`];
 
+  const homeSecondaryLink =
+    homeMarketLink !== "unavailable" ? homeMarketLink : homeEventLink;
+  const awaySecondaryLink =
+    awayMarketLink !== "unavailable" ? awayMarketLink : awayEventLink;
+
   const min = 1;
   const max = 1000;
   const step = 1;
   const [value, setValue] = useState(100);
-  const [lStake, setLStake] = useState(homeStake);
-  const [rStake, setRStake] = useState(awayStake);
+  const [lStake, setLStake] = useState(homeStake.toFixed(2));
+  const [rStake, setRStake] = useState(awayStake.toFixed(2));
 
   const handleChange = (e) => {
     let newValue = Number(e.target.value);
@@ -57,17 +62,24 @@ export default function BetCard({ bet }) {
             target="_blank"
             className={` ${
               homeDirectLink === "unavailable"
-                ? "bg-gray-400 cursor-not-allowed hover:bg-red-800"
-                : "bg-blue-500"
-            } text-white text-center py-2 px-4 rounded-md hover:bg-blue-600 block mb-2`}
+                ? "bg-gray-400 pointer-events-none"
+                : "bg-blue-500 hover:bg-blue-600"
+            } text-white text-center py-2 px-4 rounded-md block mb-2`}
           >
             {homeDirectLink !== "unavailable" ? "Direct Link" : "Unavailable"}
           </a>
           <a
-            href="https://google.com"
-            className="bg-blue-700 text-white text-center py-2 px-4 rounded-md hover:bg-blue-600 block mb-2"
+            href={homeSecondaryLink !== "unavailable" ? homeSecondaryLink : "#"}
+            target="_blank"
+            className={`${
+              homeSecondaryLink === "unavailable"
+                ? "bg-gray-400 pointer-events-none"
+                : "bg-blue-700 hover:bg-blue-600"
+            } text-white text-center py-2 px-4 rounded-md block mb-2`}
           >
-            Secondary Link
+            {homeSecondaryLink !== "unavailable"
+              ? "Secondary Link"
+              : "Unavailable"}
           </a>
         </div>
         <div className="flex items-center justify-evenly grow-2 grid grid-cols-2 place-items-center">
@@ -109,17 +121,24 @@ export default function BetCard({ bet }) {
             target="_blank"
             className={` ${
               awayDirectLink === "unavailable"
-                ? "bg-gray-400 cursor-not-allowed hover:bg-red-800"
-                : "bg-blue-500"
-            } text-white text-center py-2 px-4 rounded-md hover:bg-blue-600 block mb-2`}
+                ? "bg-gray-400 pointer-events-none"
+                : "bg-blue-500 hover:bg-blue-600"
+            } text-white text-center py-2 px-4 rounded-md block mb-2`}
           >
             {awayDirectLink !== "unavailable" ? "Direct Link" : "Unavailable"}
           </a>
           <a
-            href="https://google.com"
-            className="bg-blue-700 text-white text-center py-2 px-4 rounded-md hover:bg-blue-600 block mb-2"
+            href={awaySecondaryLink !== "unavailable" ? awaySecondaryLink : "#"}
+            target="_blank"
+            className={`${
+              awaySecondaryLink === "unavailable"
+                ? "bg-gray-400 pointer-events-none"
+                : "bg-blue-700 hover:bg-blue-600"
+            } text-white text-center py-2 px-4 rounded-md block mb-2`}
           >
-            Secondary Link
+            {awaySecondaryLink !== "unavailable"
+              ? "Secondary Link"
+              : "Unavailable"}
           </a>
         </div>
       </div>

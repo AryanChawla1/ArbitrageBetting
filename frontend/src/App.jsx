@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { AuthProvider, useAuth } from "./context/AuthContext";
 import {
   BrowserRouter as Router,
@@ -8,13 +7,13 @@ import {
 } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import Dashboard from "./pages/Dashboard";
+import SignUpPage from "./pages/SignUpPage";
 
 const PrivateRoute = ({ children }) => {
   const { session } = useAuth();
   return session ? children : <Navigate to="/login" replace />;
 };
 
-//TODO: Make login page functional with sign-up
 //TODO: Make use of log out within components as well as useAuth
 //TODO: Add Stripe
 //TODO: Make a home page rather then redirecting
@@ -34,6 +33,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
           <Route
             path="/dashboard"
             element={

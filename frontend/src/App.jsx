@@ -14,9 +14,9 @@ const PrivateRoute = ({ children }) => {
   return session ? children : <Navigate to="/login" replace />;
 };
 
-//TODO: Make use of log out within components as well as useAuth
 //TODO: Add Stripe
 //TODO: Make a home page rather then redirecting
+//TODO: Change colours
 
 const AuthRedirect = () => {
   const { session } = useAuth();

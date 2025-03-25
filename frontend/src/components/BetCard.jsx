@@ -82,10 +82,10 @@ export default function BetCard({ bet }) {
         </div>
         <div className="flex items-center justify-evenly grow-2 grid grid-cols-2 place-items-center">
           <div>
-            <p className="font-bold text-xs lg:text-l xl:text-3xl">{lStake}</p>
+            <p className="font-bold text-xl xl:text-3xl">{lStake}</p>
           </div>
           <div>
-            <p className="font-bold text-xs lg:text-l xl:text-3xl">{rStake}</p>
+            <p className="font-bold text-xl xl:text-3xl">{rStake}</p>
           </div>
           <div className="flex flex-col items-center gap-4 col-span-2">
             <input
@@ -104,7 +104,7 @@ export default function BetCard({ bet }) {
               step={step}
               value={value}
               onChange={handleChange}
-              className="w-20 p-2 text-center border border-gray-300 rounded-md shadow-sm appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+              className="w-20 text-center border border-gray-300 rounded-md shadow-sm appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
             />
           </div>
         </div>

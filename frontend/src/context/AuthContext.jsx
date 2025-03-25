@@ -5,10 +5,12 @@ const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [session, setSession] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
       setSession(session);
+      setLoading(false)
     });
 
     const {
@@ -19,6 +21,17 @@ export const AuthProvider = ({ children }) => {
 
     return () => subscription.unsubscribe();
   }, []);
+
+  if (loading) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+        <div className="w-16 h-16 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin"></div>
+        <h2 className="mt-4 text-lg font-medium text-gray-600">
+          Loading, please wait...
+        </h2>
+      </div>
+    );
+  }
 
   return (
     <AuthContext.Provider value={{ session }}>{children}</AuthContext.Provider>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import useWebSocket from "react-use-websocket";
 import BetCard from "../components/BetCard";
+import { supabase } from "../supabase";
 
 function Dashboard() {
   const { sendMessage, lastMessage, readyState } = useWebSocket(
@@ -25,15 +26,32 @@ function Dashboard() {
     }
   }, [lastMessage]);
 
+  const handleLogout = async () => {
+    const { error } = await supabase.auth.signOut();
+    if (!error) {
+      navigate("/login", { replace: true });
+    } else {
+      console.error("Logout failed:", error.message);
+    }
+  };
+
   return (
-    <div className="flex flex-col gap-5 items-center justify-center">
-      <h1 className="text-s lg:text-2xl font-bold text-center">
-        Arbitrage Opportunities
-      </h1>
-      <p>WebSocket Status: {readyState === 1 ? "Connected" : "Disconnected"}</p>
-      {bets.map((bet, index) => {
-        return <BetCard key={index} bet={bet} />;
-      })}
+    <div>
+      <nav className="bg-blue-500 text-white p-4 flex justify-between items-center">
+        <h1 className="text-lg font-bold">Dashboard</h1>
+        <button
+         type="button"
+          onClick={handleLogout}
+          className="bg-blue-900 hover:bg-blue-950 text-white py-2 px-4 rounded"
+        >
+          Logout
+        </button>
+      </nav>
+      <div className="flex flex-col gap-5 items-center justify-center mt-6">
+        {bets.map((bet, index) => {
+          return <BetCard key={index} bet={bet} />;
+        })}
+      </div>
     </div>
   );
 }

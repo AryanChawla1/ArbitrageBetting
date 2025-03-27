@@ -8,6 +8,7 @@ import {
 import LoginPage from "./pages/LoginPage";
 import Dashboard from "./pages/Dashboard";
 import SignUpPage from "./pages/SignUpPage";
+import Landing from "./pages/Landing";
 
 const PrivateRoute = ({ children }) => {
   const { session } = useAuth();
@@ -15,7 +16,7 @@ const PrivateRoute = ({ children }) => {
 };
 
 //TODO: Add Stripe
-//TODO: Make a home page rather then redirecting
+//TODO: fill in launch page content, make name, logo, etc, functional launch page button
 //TODO: Change colours
 
 const AuthRedirect = () => {
@@ -42,6 +43,7 @@ function App() {
               </PrivateRoute>
             }
           />
+          <Route path="/" element={<Landing />} />
           <Route path="*" element={<AuthRedirect />} />
         </Routes>
       </Router>

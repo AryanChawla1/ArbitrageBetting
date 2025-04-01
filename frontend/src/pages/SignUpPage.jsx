@@ -28,7 +28,10 @@ const SignUpPage = () => {
     console.log(error);
 
     if (data) {
-      setMessage({ type: "success", text: "Sign up successful! Please log in." });
+      setMessage({
+        type: "success",
+        text: "Sign up successful! Please log in.",
+      });
       setTimeout(() => navigate("/login", { replace: true }), 2000);
     } else if (error) {
       setMessage({ type: "error", text: error.message });
@@ -42,7 +45,9 @@ const SignUpPage = () => {
         {message.text && (
           <div
             className={`mb-4 p-2 rounded ${
-              message.type === "success" ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"
+              message.type === "success"
+                ? "bg-green-100 text-green-700"
+                : "bg-red-100 text-red-700"
             }`}
           >
             {message.text}
@@ -50,7 +55,10 @@ const SignUpPage = () => {
         )}
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
+            <label
+              htmlFor="email"
+              className="block text-gray-700 font-medium mb-2"
+            >
               Email
             </label>
             <input
@@ -64,7 +72,10 @@ const SignUpPage = () => {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="password" className="block text-gray-700 font-medium mb-2">
+            <label
+              htmlFor="password"
+              className="block text-gray-700 font-medium mb-2"
+            >
               Password
             </label>
             <input
@@ -78,7 +89,10 @@ const SignUpPage = () => {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="confirmPassword" className="block text-gray-700 font-medium mb-2">
+            <label
+              htmlFor="confirmPassword"
+              className="block text-gray-700 font-medium mb-2"
+            >
               Confirm Password
             </label>
             <input

@@ -40,7 +40,7 @@ function Dashboard() {
       <nav className="bg-blue-500 text-white p-4 flex justify-between items-center">
         <h1 className="text-lg font-bold">Arbitrage</h1>
         <button
-         type="button"
+          type="button"
           onClick={handleLogout}
           className="bg-white hover:bg-blue-100 text-blue-900 py-2 px-4 rounded"
         >

@@ -7,7 +7,6 @@ const LoginPage = () => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Email:", email);
@@ -15,7 +14,7 @@ const LoginPage = () => {
     const { data, error } = await supabase.auth.signInWithPassword({
       email: email,
       password: password,
-    })
+    });
     console.log(data);
     console.log(error);
     if (data) {
@@ -24,7 +23,7 @@ const LoginPage = () => {
   };
 
   const handleSignUpRedirect = () => {
-    navigate("/signup", {replace: true});
+    navigate("/signup", { replace: true });
   };
 
   return (
@@ -33,7 +32,10 @@ const LoginPage = () => {
         <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
+            <label
+              htmlFor="email"
+              className="block text-gray-700 font-medium mb-2"
+            >
               Email
             </label>
             <input
@@ -47,7 +49,10 @@ const LoginPage = () => {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="password" className="block text-gray-700 font-medium mb-2">
+            <label
+              htmlFor="password"
+              className="block text-gray-700 font-medium mb-2"
+            >
               Password
             </label>
             <input
@@ -67,15 +72,15 @@ const LoginPage = () => {
             Login
           </button>
           <div className="mt-4 text-center">
-          <p className="text-gray-700">Don't have an account?</p>
-          <button
-            type="button"
-            onClick={handleSignUpRedirect}
-            className="text-blue-500 hover:underline mt-2"
-          >
-            Sign Up
-          </button>
-        </div>
+            <p className="text-gray-700">Don't have an account?</p>
+            <button
+              type="button"
+              onClick={handleSignUpRedirect}
+              className="text-blue-500 hover:underline mt-2"
+            >
+              Sign Up
+            </button>
+          </div>
         </form>
       </div>
     </div>

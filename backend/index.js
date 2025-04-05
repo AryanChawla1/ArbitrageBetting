@@ -4,6 +4,8 @@ const WebSocket = require("ws");
 var fs = require("fs");
 
 const { prepareData, revenue } = require("./data");
+const { retrieveEmails } = require("./supabase");
+const { sendEmail } = require("./mail");
 
 const port = 3000;
 const app = express();
@@ -46,6 +48,15 @@ async function sendUpdates() {
       clients.delete(client);
     }
   });
+  const emails = await retrieveEmails();
+  console.log("Emails: ", emails);
+  for (const email of emails) {
+    sendEmail(
+      email,
+      "Arbitrage Betting",
+      `Arbitrage betting opportunities found: ${JSON.stringify(data)}`
+    );
+  }
 }
 
 // 86400000 ms in a day

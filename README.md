@@ -6,13 +6,25 @@ Program that detects and notifies users of possible arbitrages within online spo
 
 ### Program Structure
 
-The program will be built into different components: Core Logic, Account Configuration, Odd Retrieving, Frontend.
-
-The core logic and odd retrieving components work together to get the data prepared.
+The program is obviously divided into backend and frontend, but the primary focus is the backend. The core components that build up the backend are the core logic, data handling, websocket, mailing
 
 #### Core Logic
 
 The core logic handles the algorithm behind detecting and calculating the profit gain. Calculating arbitrage betting opportunities is quite simple and can be done internally with one sportsbook or externally via comparing multiple sportsbooks. Firstly, let's explain the mathematics behind it.
+
+#### Data Handling
+
+Usings and odds api, the odds can be retrieved and formatted for multiple sports at a certain frequency. 500 credits a month where each region and sport represents 1 credit. With 3 credits and 2 regions to consider, its 6 credits per call.
+
+The data formatting is purely to make the data readable and formatted to american odd standards. Calculations using american odds leads to rounding error, thus its better to calculate via decimal format and send the user american odds.
+
+#### Websocket
+
+The server hosts a websocket rather then a rest api interface, this way the clients (users) get updated immediately on new arbitrage opportunities found.
+
+#### Mailing
+
+Mailing uses both supabase auth and nodemailer to notify users via email as well. This is done after the clients are updated, however, as that is prioritized.
 
 ##### General Understanding
 
@@ -115,29 +127,6 @@ With the probabilities, sum them up. If they are less than 100%, we can arbitrag
 
 This algorithm is the core logic and is quite simple, yet effective in calculating profit.
 
-#### Account Configuration
-
-Accounts are created and saved to configure their email for possible notifications, and sportsbook, sports, teams, players and more to filter possible arbitrage opportunities. The user configuration is still up for debate.
-
-Firebase Authentication will be used to verify users, whereas the database is to store their information.
-
-#### Odds Retrieval
-
-The odds will be retrieved via odds api. Now, due to the plan, there are many options on arbitrage detection.
-
-This will create the request and formulate the data based on account configuration and core logic afterwards to notify users.
-
-##### Option 1: Detect Arbitrage Manually
-
-A user can make a request for all upcoming games to detect arbitrages. Then, any that are found and satisfy other users, will be notified.
-
-##### Option 2: Detect Arbitrage Specifically and Manually
-
-This is pretty much the same as the first option, but the attempt is calculated based on the specific event. This will also be to save usage.
-
-##### Option 3: Detect Arbitrage Automatically
-
-Run a cron job a certain frequency to calculate arbitrages and notify satisfying users. This will have the highest usage.
 
 #### Frontend
 
@@ -145,10 +134,10 @@ The frontend is what the user will interact with. In this case, it will be built
 
 ### Tech Stack
 
-Database: Firebase
-Hosting: Firebase?
+Database: Supabase
+Hosting: -
 Backend: Express.js
-Frontend: React/Vue?
+Frontend: vite React
 
 ## Guide to Program
 
@@ -189,5 +178,3 @@ After installing:
 cd ./backend
 npm test
 ```
-
-### Using Program

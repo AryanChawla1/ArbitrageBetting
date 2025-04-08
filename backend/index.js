@@ -17,6 +17,9 @@ var data = [];
 
 let sample = require("./sample/bets.json");
 
+//TODO: Make email look nicer
+//TODO: Convert into cron job?
+
 wss.on("connection", (ws) => {
   console.log("New client connected");
   clients.add(ws);
@@ -49,6 +52,10 @@ async function sendUpdates() {
     }
   });
   const emails = await retrieveEmails();
+  if (!emails) {
+    console.error("No emails found");
+    return;
+  }
   console.log("Emails: ", emails);
   for (const email of emails) {
     sendEmail(
@@ -57,6 +64,7 @@ async function sendUpdates() {
       `Arbitrage betting opportunities found: ${JSON.stringify(data)}`
     );
   }
+  console.log("Emails sent");
 }
 
 // 86400000 ms in a day

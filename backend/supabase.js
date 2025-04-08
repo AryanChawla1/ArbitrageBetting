@@ -1,4 +1,4 @@
-import { createClient } from '@supabase/supabase-js';
+const {createClient} = require('@supabase/supabase-js');
 
 require('dotenv').config();
 
@@ -24,7 +24,7 @@ async function retrieveEmails() {
         console.error('Error retrieving users:', error.message);
         return;
     }
-
+    console.log(users)
     const emails = users.map(user => user.email);
     return emails;
 }

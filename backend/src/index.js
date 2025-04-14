@@ -15,7 +15,7 @@ const wss = new WebSocket.Server({ server });
 const clients = new Set();
 var data = [];
 
-let sample = require("./sample/bets.json");
+let sample = require("../sample/bets.json");
 
 //TODO: Make email look nicer
 //TODO: Convert into cron job?

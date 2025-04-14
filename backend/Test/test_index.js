@@ -1,5 +1,5 @@
-const { isArbitrage, determineStakes } = require("../core");
-const { prepareData, revenue } = require("../data");
+const { isArbitrage, determineStakes } = require("../src/core");
+const { prepareData, revenue } = require("../src/data");
 const assert = require("assert");
 
 // function for core asserts based on pass/fail

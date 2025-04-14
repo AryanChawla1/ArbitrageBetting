@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import useWebSocket from "react-use-websocket";
 import BetCard from "../components/BetCard";
 import { supabase } from "../supabase";
+import { Bell, BarChart2, Zap, ArrowRight, Menu, X, Percent, Trophy } from "lucide-react"
 
 function Dashboard() {
   const { sendMessage, lastMessage, readyState } = useWebSocket(
@@ -16,6 +17,7 @@ function Dashboard() {
   );
 
   const [bets, setBets] = useState([]);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
     if (lastMessage && readyState === 1) {
@@ -37,16 +39,57 @@ function Dashboard() {
 
   return (
     <div>
-      <nav className="bg-blue-500 text-white p-4 flex justify-between items-center">
-        <h1 className="text-lg font-bold">Arbitrage</h1>
-        <button
-          type="button"
-          onClick={handleLogout}
-          className="bg-white hover:bg-blue-100 text-blue-900 py-2 px-4 rounded"
-        >
-          Logout
-        </button>
-      </nav>
+      {/* Navbar */}
+      <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex h-16 items-center justify-between">
+            <div className="flex items-center">
+              <Zap className="h-8 w-8 text-purple-600" />
+              <span className="ml-2 text-xl font-bold">ArbitrageAlert</span>
+            </div>
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex md:items-center md:space-x-4">
+              <button className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors">
+                Login
+              </button>
+              <button className="px-4 py-2 text-sm font-medium text-white bg-purple-600 rounded-md hover:bg-purple-700 transition-colors">
+                Sign Up
+              </button>
+            </div>
+
+            {/* Mobile menu button */}
+            <div className="flex md:hidden">
+              <button
+                type="button"
+                className="text-gray-500 hover:text-gray-700"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
+                <span className="sr-only">Open main menu</span>
+                {isMenuOpen ? (
+                  <X className="h-6 w-6" aria-hidden="true" />
+                ) : (
+                  <Menu className="h-6 w-6" aria-hidden="true" />
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile menu, show/hide based on menu state */}
+        {isMenuOpen && (
+          <div className="md:hidden">
+            <div className="space-y-1 px-2 pb-3 pt-2">
+              <button className="block w-full px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600 transition-colors">
+                Login
+              </button>
+              <button className="block w-full px-3 py-2 text-base font-medium text-white bg-purple-600 rounded-md hover:bg-purple-700 transition-colors">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        )}
+      </header>
       <div className="flex flex-col gap-5 items-center justify-center mt-6">
         {bets.map((bet, index) => {
           return <BetCard key={index} bet={bet} />;

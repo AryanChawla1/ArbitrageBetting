@@ -26,11 +26,12 @@ function getStakesAndAmerican(odds) {
     });
     const stakesList = determineStakes(oddsList, 100);
     const americanlist = decimalToAmerican(oddsList);
-    for (let i = 0; i < stakesList.length; i++) {
+    for (let i = 0; i < americanlist.length; i++) {
       odd.best_odds[`stake_${namesList[i]}`] = stakesList[i];
       odd.best_odds[`American_${namesList[i]}`] = americanlist[i];
       revenue += stakesList[i];
     }
+    odd.best_odds[`profitPercentage`] = stakesList[-1];
     revenue -= 100;
   });
 

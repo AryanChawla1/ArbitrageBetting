@@ -29,9 +29,14 @@ function determineStakes(odds, stake) {
   for (i = 0; i < odds.length; i++) {
     stakes[i] = (stake * oddToProbability(odds[i])) / totalProb;
   }
+  // calculate profit percentage
+  var profitPercentage = odds[0] * stakes[0] - stake;
+  stakes.push(profitPercentage);
   return stakes;
 }
 
+
+// function to determine american odds
 function decimalToAmerican(decimalOddsList) {
   return decimalOddsList.map((odds) => {
     if (odds >= 2.0) {

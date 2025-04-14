@@ -17,7 +17,8 @@
       "source_Ottawa Senators": "fanduel",
       "directLink_Ottawa Senators": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.490572712&selectionId=25599",
       "marketLink_Ottawa Senators": "unavailable",
-      "eventLink_Ottawa Senators": "https://sportsbook.fanduel.com/ice-hockey/nhl/ottawa-senators-%40-new-jersey-devils-34146139"
+      "eventLink_Ottawa Senators": "https://sportsbook.fanduel.com/ice-hockey/nhl/ottawa-senators-%40-new-jersey-devils-34146139",
+      "profitPercentage": 2.44
     }
   },
   {
@@ -38,7 +39,8 @@
       "source_Vegas Golden Knights": "betonlineag",
       "directLink_Vegas Golden Knights": "unavailable",
       "marketLink_Vegas Golden Knights": "unavailable",
-      "eventLink_Vegas Golden Knights": "https://sports.betonline.ag/sportsbook/hockey/nhl/game/490650140"
+      "eventLink_Vegas Golden Knights": "https://sports.betonline.ag/sportsbook/hockey/nhl/game/490650140",
+      "profitPercentage": 0.0
     }
   },
   {
@@ -59,7 +61,8 @@
       "source_Seattle Kraken": "draftkings",
       "directLink_Seattle Kraken": "https://sportsbook.draftkings.com/event/32000035?outcomes=0ML79139606_3",
       "marketLink_Seattle Kraken": "unavailable",
-      "eventLink_Seattle Kraken": "https://sportsbook.draftkings.com/event/32000035"
+      "eventLink_Seattle Kraken": "https://sportsbook.draftkings.com/event/32000035",
+      "profitPercentage": 1.0
     }
   }
 ]

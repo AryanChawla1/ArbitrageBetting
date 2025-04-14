@@ -17,6 +17,7 @@ export default function BetCard({ bet }) {
   const awayMarketLink = best_odds[`marketLink_${away_team}`];
   const homeEventLink = best_odds[`eventLink_${home_team}`];
   const awayEventLink = best_odds[`eventLink_${away_team}`];
+  const profitPercantage = best_odds[`profitPercentage`];
 
   const homeSecondaryLink =
     homeMarketLink !== "unavailable" ? homeMarketLink : homeEventLink;
@@ -29,6 +30,7 @@ export default function BetCard({ bet }) {
   const [value, setValue] = useState(100);
   const [lStake, setLStake] = useState(homeStake.toFixed(2));
   const [rStake, setRStake] = useState(awayStake.toFixed(2));
+  const [profit, setProfit] = useState(profitPercantage.toFixed(2));
 
   const handleChange = (e) => {
     let newValue = Number(e.target.value);
@@ -41,27 +43,28 @@ export default function BetCard({ bet }) {
     setLStake(newL.toFixed(2));
     setRStake(newR.toFixed(2));
     setValue(newValue);
+    setProfit((profitPercantage * newValue).toFixed(2));
   };
 
   return (
     <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden w-full md:w-3/4 lg:w-1/2 mx-auto justify-center">
       <div className=" text-center p-4">
-        <h2 className="text-2xl font-bold">Bet Card</h2>
+        <h2 className="text-2xl font-bold text-gray-900">Moneyline</h2>
       </div>
       <div className="flex flex-col md:flex-row justify-around">
         <div className="p-4 text-center grow-1">
-          <p className="text-gray-700 font-bold text-xl">{home_team}</p>
+          <p className="text-gray-900 font-bold text-xl">{home_team}</p>
           <p className="text-gray-700 font-semibold text-l">
             {homeAmerican} ({homeOdds})
           </p>
-          <p className="text-gray-700">{homeSource}</p>
+          <p className="text-gray-600">{homeSource}</p>
           <a
             href={homeDirectLink !== "unavailable" ? homeDirectLink : "#"}
             target="_blank"
             className={` ${
               homeDirectLink === "unavailable"
                 ? "bg-gray-400 pointer-events-none"
-                : "bg-blue-500 hover:bg-blue-600"
+                : "bg-purple-600 hover:bg-purple-500"
             } text-white text-center py-2 px-4 rounded-md block mb-2`}
           >
             {homeDirectLink !== "unavailable" ? "Direct Link" : "Unavailable"}
@@ -72,7 +75,7 @@ export default function BetCard({ bet }) {
             className={`${
               homeSecondaryLink === "unavailable"
                 ? "bg-gray-400 pointer-events-none"
-                : "bg-blue-700 hover:bg-blue-600"
+                : "bg-purple-400 hover:bg-purple-300"
             } text-white text-center py-2 px-4 rounded-md block mb-2`}
           >
             {homeSecondaryLink !== "unavailable"
@@ -82,10 +85,15 @@ export default function BetCard({ bet }) {
         </div>
         <div className="flex items-center justify-evenly grow-2 grid grid-cols-2 place-items-center">
           <div>
-            <p className="font-bold text-xl xl:text-3xl">{lStake}</p>
+            <p className="font-semibold text-xl xl:text-3xl">{lStake}</p>
           </div>
           <div>
-            <p className="font-bold text-xl xl:text-3xl">{rStake}</p>
+            <p className="font-semibold text-xl xl:text-3xl">{rStake}</p>
+          </div>
+          <div className="col-span-2 flex flex-col items-center text-center">
+            <p className="font-semibold text-xl xl:text-3xl text-center text-green-600">
+              Profit: {profitPercantage.toFixed(2)}% ({profit})
+            </p>
           </div>
           <div className="flex flex-col items-center gap-4 col-span-2">
             <input
@@ -95,7 +103,7 @@ export default function BetCard({ bet }) {
               step={step}
               value={value}
               onChange={handleChange}
-              className="w-full accent-blue-500"
+              className="w-full accent-purple-700"
             />
             <input
               type="number"
@@ -109,18 +117,18 @@ export default function BetCard({ bet }) {
           </div>
         </div>
         <div className="p-4 text-center grow-1">
-          <p className="text-gray-700 font-bold text-xl">{away_team}</p>
-          <p className="text-gray-700 font-semibold text-l">
+          <p className="text-gray-900 font-bold text-xl">{away_team}</p>
+          <p className="text-gray-900 font-semibold text-l">
             {awayAmerican} ({awayOdds})
           </p>
-          <p className="text-gray-700">{awaySource}</p>
+          <p className="text-gray-600">{awaySource}</p>
           <a
             href={awayDirectLink !== "unavailable" ? awayDirectLink : "#"}
             target="_blank"
             className={` ${
               awayDirectLink === "unavailable"
                 ? "bg-gray-400 pointer-events-none"
-                : "bg-blue-500 hover:bg-blue-600"
+                : "bg-purple-600 hover:bg-purple-500"
             } text-white text-center py-2 px-4 rounded-md block mb-2`}
           >
             {awayDirectLink !== "unavailable" ? "Direct Link" : "Unavailable"}
@@ -131,7 +139,7 @@ export default function BetCard({ bet }) {
             className={`${
               awaySecondaryLink === "unavailable"
                 ? "bg-gray-400 pointer-events-none"
-                : "bg-blue-700 hover:bg-blue-600"
+                : "bg-purple-400 hover:bg-purple-300"
             } text-white text-center py-2 px-4 rounded-md block mb-2`}
           >
             {awaySecondaryLink !== "unavailable"

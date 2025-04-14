@@ -66,7 +66,7 @@ const SignUpPage = () => {
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
               placeholder="Enter your email"
               required
             />
@@ -83,7 +83,7 @@ const SignUpPage = () => {
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
               placeholder="Enter your password"
               required
             />
@@ -100,14 +100,14 @@ const SignUpPage = () => {
               id="confirmPassword"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
               placeholder="Confirm your password"
               required
             />
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-200"
+            className="w-full bg-purple-500 text-white py-2 px-4 rounded-lg hover:bg-purple-600 transition duration-200"
           >
             Sign Up
           </button>
@@ -116,7 +116,7 @@ const SignUpPage = () => {
           <p className="text-gray-700">Already have an account?</p>
           <button
             onClick={() => navigate("/login")}
-            className="text-blue-500 hover:underline mt-2"
+            className="text-purple-500 hover:underline mt-2"
           >
             Log In
           </button>

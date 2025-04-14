@@ -16,8 +16,7 @@ const PrivateRoute = ({ children }) => {
 };
 
 //TODO: Add Stripe
-//TODO: fill in launch page content, make name, logo, etc, functional launch page button
-//TODO: Change colours
+//TODO: make buttons functional
 
 const AuthRedirect = () => {
   const { session } = useAuth();

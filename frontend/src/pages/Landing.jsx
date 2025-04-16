@@ -4,6 +4,22 @@ import { Bell, BarChart2, Zap, ArrowRight, Menu, X, Percent, Trophy } from "luci
 
 function Landing() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const { session } = useAuth();
+
+  
+  const handleLogin = () => {
+    navigate("/login", { replace: true });
+  };
+
+  const handleSignUp = () => {
+    navigate("/signup", { replace: true });
+  }
+
+  const handleSession = () => {
+    navigate("/dashboard", { replace: true });
+  }
+
+//TODO: Add Manage button functionality
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -18,11 +34,23 @@ function Landing() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex md:items-center md:space-x-4">
-              <button className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors">
-                Login
+              <button className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors" onClick={() => {
+                if (session) {
+                  handleSession()
+                } else {
+                  handleLogin()
+                }
+              }}>
+                {session ? `Dashboard` : `Login`}
               </button>
-              <button className="px-4 py-2 text-sm font-medium text-white bg-purple-600 rounded-md hover:bg-purple-700 transition-colors">
-                Sign Up
+              <button className="px-4 py-2 text-sm font-medium text-white bg-purple-600 rounded-md hover:bg-purple-700 transition-colors" onClick={() => {
+                if (session) {
+                  console.log("Manage button clicked")
+                } else {
+                  handleSignUp()
+                }
+              }}>
+              {session ? `Manage` : `Signup`}
               </button>
             </div>
 
@@ -48,11 +76,23 @@ function Landing() {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
-              <button className="block w-full px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600 transition-colors">
-                Login
+              <button className="block w-full px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600 transition-colors" onClick={() => {
+                if (session) {
+                  handleSession()
+                } else {
+                  handleLogin()
+                }
+              }}>
+                {session ? `Dashboard` : `Login`}
               </button>
-              <button className="block w-full px-3 py-2 text-base font-medium text-white bg-purple-600 rounded-md hover:bg-purple-700 transition-colors">
-                Sign Up
+              <button className="block w-full px-3 py-2 text-base font-medium text-white bg-purple-600 rounded-md hover:bg-purple-700 transition-colors" onClick={() => {
+                if (session) {
+                  console.log("Manage button clicked")
+                } else {
+                  handleSignUp()
+                }
+              }}>
+                {session ? `Manage` : `Signup`}
               </button>
             </div>
           </div>

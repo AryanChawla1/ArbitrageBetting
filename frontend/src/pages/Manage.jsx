@@ -1,15 +1,34 @@
 import React, { useState } from 'react';
 import { supabase } from '../supabase';
 
+
 function Manage() {
-  const [password, setPassword] = useState('');
+  const [currentPassword, setCurrentPassword] = useState('');
+  const [newPassword, setNewPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
 
   const handleChangePassword = async () => {
     setError('');
     setSuccess('');
-    const { error } = await supabase.auth.updateUser({ password });
+
+    if (newPassword !== confirmPassword) {
+      setError('New passwords do not match.');
+      return;
+    }
+
+    const { error: signInError } = await supabase.auth.signInWithPassword({
+      email: supabase.auth.user().email,
+      password: currentPassword,
+    });
+
+    if (signInError) {
+      setError('Current password is incorrect.');
+      return;
+    }
+
+    const { error } = await supabase.auth.updateUser({ password: newPassword });
     if (error) {
       setError(error.message);
     } else {
@@ -39,36 +58,52 @@ function Manage() {
   };
 
   return (
-    <div className="max-w-md mx-auto p-5 font-sans">
-      <h1 className="text-center text-gray-800 text-2xl font-bold">Manage Account</h1>
-      {error && <p className="text-center text-red-500">{error}</p>}
-      {success && <p className="text-center text-green-500">{success}</p>}
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <div className="bg-white p-8 rounded shadow-md w-full max-w-sm">
+        <h1 className="text-2xl font-bold mb-6 text-center">Manage Account</h1>
+        {error && <p className="text-center text-red-500">{error}</p>}
+        {success && <p className="text-center text-green-500">{success}</p>}
 
-      <div className="mb-5">
-        <h2 className="text-lg text-gray-600 font-medium">Change Password</h2>
-        <input
-          type="password"
-          placeholder="New Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className="w-full p-2 mb-3 border border-gray-300 rounded"
-        />
-        <button
-          onClick={handleChangePassword}
-          className="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-        >
-          Change Password
-        </button>
-      </div>
+        <div className="mb-5">
+          <h2 className="text-lg text-gray-700 font-medium mb-2">Change Password</h2>
+          <input
+            type="password"
+            placeholder="Current Password"
+            value={currentPassword}
+            onChange={(e) => setCurrentPassword(e.target.value)}
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 mb-3"
+          />
+          <input
+            type="password"
+            placeholder="New Password"
+            value={newPassword}
+            onChange={(e) => setNewPassword(e.target.value)}
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 mb-3"
+          />
+          <input
+            type="password"
+            placeholder="Confirm New Password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 mb-3"
+          />
+          <button
+            onClick={handleChangePassword}
+            className="w-full bg-purple-500 text-white py-2 px-4 rounded-lg hover:bg-purple-600 transition duration-200"
+          >
+            Change Password
+          </button>
+        </div>
 
-      <div>
-        <h2 className="text-lg text-gray-600 font-medium">Delete Account</h2>
-        <button
-          onClick={handleDeleteAccount}
-          className="w-full p-2 bg-red-500 text-white rounded hover:bg-red-600"
-        >
-          Delete Account
-        </button>
+        <div>
+          <h2 className="text-lg text-gray-700 font-medium mb-2">Delete Account</h2>
+          <button
+            onClick={handleDeleteAccount}
+            className="w-full bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 transition duration-200"
+          >
+            Delete Account
+          </button>
+        </div>
       </div>
     </div>
   );

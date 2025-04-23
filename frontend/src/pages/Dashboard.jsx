@@ -40,7 +40,7 @@ function Dashboard() {
   };
 
   const handleManage = () => {
-    navigate("/manage", { replace: true });
+    navigate("/manage");
   }
 
   return (
@@ -109,9 +109,15 @@ function Dashboard() {
         )}
       </header>
       <div className="flex flex-col gap-5 items-center justify-center mt-6">
-        {bets.map((bet, index) => {
-          return <BetCard key={index} bet={bet} />;
-        })}
+        {bets.length != 0 ? 
+          bets.map((bet, index) => {
+            return <BetCard key={index} bet={bet} />;
+          }) :
+            <div className="flex flex-col items-center justify-center mt-6">
+              <h1 className="text-2xl font-bold text-gray-700">No Bets Found</h1>
+              <p className="text-gray-500">Please check back later.</p>
+            </div>
+        }
       </div>
     </div>
   );

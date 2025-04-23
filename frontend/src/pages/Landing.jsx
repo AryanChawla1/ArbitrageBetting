@@ -22,7 +22,7 @@ function Landing() {
   }
 
   const handleManage = () => {
-    navigate("/manage", { replace: true });
+    navigate("/manage");
   }
 
 //TODO: Add Manage button functionality

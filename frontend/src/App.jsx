@@ -9,6 +9,7 @@ import LoginPage from "./pages/LoginPage";
 import Dashboard from "./pages/Dashboard";
 import SignUpPage from "./pages/SignUpPage";
 import Landing from "./pages/Landing";
+import Manage from "./pages/Manage"
 
 const PrivateRoute = ({ children }) => {
   const { session } = useAuth();
@@ -39,6 +40,14 @@ function App() {
             element={
               <PrivateRoute>
                 <Dashboard />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/manage"
+            element={
+              <PrivateRoute>
+                <Manage />
               </PrivateRoute>
             }
           />

@@ -1,10 +1,12 @@
 import { useAuth } from "../context/AuthContext";
 import { useState } from "react"
 import { Bell, BarChart2, Zap, ArrowRight, Menu, X, Percent, Trophy } from "lucide-react"
+import { useNavigate } from "react-router-dom";
 
 function Landing() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { session } = useAuth();
+  const navigate = useNavigate();
 
   
   const handleLogin = () => {
@@ -17,6 +19,10 @@ function Landing() {
 
   const handleSession = () => {
     navigate("/dashboard", { replace: true });
+  }
+
+  const handleManage = () => {
+    navigate("/manage", { replace: true });
   }
 
 //TODO: Add Manage button functionality
@@ -45,7 +51,7 @@ function Landing() {
               </button>
               <button className="px-4 py-2 text-sm font-medium text-white bg-purple-600 rounded-md hover:bg-purple-700 transition-colors" onClick={() => {
                 if (session) {
-                  console.log("Manage button clicked")
+                  handleManage()
                 } else {
                   handleSignUp()
                 }
@@ -87,7 +93,7 @@ function Landing() {
               </button>
               <button className="block w-full px-3 py-2 text-base font-medium text-white bg-purple-600 rounded-md hover:bg-purple-700 transition-colors" onClick={() => {
                 if (session) {
-                  console.log("Manage button clicked")
+                  handleManage()
                 } else {
                   handleSignUp()
                 }

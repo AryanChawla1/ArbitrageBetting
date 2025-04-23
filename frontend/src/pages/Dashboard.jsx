@@ -3,8 +3,10 @@ import useWebSocket from "react-use-websocket";
 import BetCard from "../components/BetCard";
 import { supabase } from "../supabase";
 import { Bell, BarChart2, Zap, ArrowRight, Menu, X, Percent, Trophy } from "lucide-react"
+import { useNavigate } from "react-router-dom";
 
 function Dashboard() {
+  const navigate = useNavigate();
   const { sendMessage, lastMessage, readyState } = useWebSocket(
     "ws://localhost:3000",
     {
@@ -37,6 +39,10 @@ function Dashboard() {
     }
   };
 
+  const handleManage = () => {
+    navigate("/manage", { replace: true });
+  }
+
   return (
     <div>
       {/* Navbar */}
@@ -56,7 +62,10 @@ function Dashboard() {
               >
                 Logout
               </button>
-              <button className="px-4 py-2 text-sm font-medium text-white bg-purple-600 rounded-md hover:bg-purple-700 transition-colors">
+              <button 
+                className="px-4 py-2 text-sm font-medium text-white bg-purple-600 rounded-md hover:bg-purple-700 transition-colors"
+                onClick={handleManage}
+              >
                 Manage
               </button>
             </div>
@@ -89,7 +98,10 @@ function Dashboard() {
               >
                 Logout
               </button>
-              <button className="block w-full px-3 py-2 text-base font-medium text-white bg-purple-600 rounded-md hover:bg-purple-700 transition-colors">
+              <button 
+                className="block w-full px-3 py-2 text-base font-medium text-white bg-purple-600 rounded-md hover:bg-purple-700 transition-colors"
+                onClick={handleManage}
+              >
                 Manage
               </button>
             </div>

@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import { supabase } from '../supabase'; // Adjust the path if necessary
+import { supabase } from '../supabase';
 
-
-// TODO: FIX!!!
-const Manage = () => {
+function Manage() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
@@ -41,25 +39,34 @@ const Manage = () => {
   };
 
   return (
-    <div>
-      <h1>Manage Account</h1>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-      {success && <p style={{ color: 'green' }}>{success}</p>}
+    <div className="max-w-md mx-auto p-5 font-sans">
+      <h1 className="text-center text-gray-800 text-2xl font-bold">Manage Account</h1>
+      {error && <p className="text-center text-red-500">{error}</p>}
+      {success && <p className="text-center text-green-500">{success}</p>}
 
-      <div>
-        <h2>Change Password</h2>
+      <div className="mb-5">
+        <h2 className="text-lg text-gray-600 font-medium">Change Password</h2>
         <input
           type="password"
           placeholder="New Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          className="w-full p-2 mb-3 border border-gray-300 rounded"
         />
-        <button onClick={handleChangePassword}>Change Password</button>
+        <button
+          onClick={handleChangePassword}
+          className="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+        >
+          Change Password
+        </button>
       </div>
 
       <div>
-        <h2>Delete Account</h2>
-        <button onClick={handleDeleteAccount} style={{ color: 'red' }}>
+        <h2 className="text-lg text-gray-600 font-medium">Delete Account</h2>
+        <button
+          onClick={handleDeleteAccount}
+          className="w-full p-2 bg-red-500 text-white rounded hover:bg-red-600"
+        >
           Delete Account
         </button>
       </div>

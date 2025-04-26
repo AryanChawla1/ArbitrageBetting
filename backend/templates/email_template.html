@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .opportunity {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .opportunity h3 {
+            margin: 0;
+        }
+        .opportunity a {
+            color: blue;
+            text-decoration: underline;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .website-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>New Arbitrage Opportunities Found!</h1>
+        <h2>Check them out quick!</h2>
+        <div class="opportunities">
+            {{{opportunities}}}
+        </div>
+        <div class="button-container">
+            <a href="{{websiteLink}}" class="website-button">Visit Our Website</a>
+        </div>
+    </div>
+</body>
+</html>

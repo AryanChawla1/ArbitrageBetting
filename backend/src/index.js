@@ -1,7 +1,6 @@
 const express = require("express");
 const http = require("http");
 const WebSocket = require("ws");
-var fs = require("fs");
 
 const { prepareData, revenue } = require("./data");
 const { retrieveEmails } = require("./supabase");
@@ -16,9 +15,6 @@ const clients = new Set();
 var data = [];
 
 let sample = require("../sample/bets.json");
-
-//TODO: Make email look nicer
-//TODO: Convert into cron job?
 
 wss.on("connection", (ws) => {
   console.log("New client connected");
@@ -61,7 +57,7 @@ async function sendUpdates() {
     sendEmail(
       email,
       "Arbitrage Betting",
-      `Arbitrage betting opportunities found: ${JSON.stringify(data)}`
+      data
     );
   }
   console.log("Emails sent");

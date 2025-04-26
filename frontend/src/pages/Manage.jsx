@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { supabase } from '../supabase';
+import { useAuth } from '../context/AuthContext';
 
 
 function Manage() {
@@ -8,7 +9,7 @@ function Manage() {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
-
+  const { session } = useAuth();
   const handleChangePassword = async () => {
     setError('');
     setSuccess('');
@@ -17,9 +18,8 @@ function Manage() {
       setError('New passwords do not match.');
       return;
     }
-
     const { error: signInError } = await supabase.auth.signInWithPassword({
-      email: supabase.auth.user().email,
+      email: session.user.email,
       password: currentPassword,
     });
 

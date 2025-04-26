@@ -25,8 +25,6 @@ function Landing() {
     navigate("/manage");
   }
 
-//TODO: Add Manage button functionality
-
   return (
     <div className="min-h-screen flex flex-col">
       {/* Navbar */}

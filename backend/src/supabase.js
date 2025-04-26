@@ -26,8 +26,8 @@ async function retrieveEmails() {
     }
     console.log(users)
     const emails = users.map(user => user.email);
-    // return emails;
-    return [];
+    return emails;
+    // return [];
 }
 
 module.exports = { retrieveEmails };

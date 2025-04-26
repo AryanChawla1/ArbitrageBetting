@@ -9,16 +9,16 @@ const LoginPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Email:", email);
-    console.log("Password:", password);
     const { data, error } = await supabase.auth.signInWithPassword({
       email: email,
       password: password,
     });
-    console.log(data);
-    console.log(error);
     if (data) {
       navigate("/dashboard", { replace: true });
+    }
+    if (error) {
+      console.error("Login failed:", error.message);
+      alert("Login failed: " + error.message);
     }
   };
 

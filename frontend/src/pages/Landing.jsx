@@ -126,7 +126,7 @@ function Landing() {
               </div>
               <div className="hidden lg:block">
                 <img
-                  src="/mine.webp"
+                  src="./mine.webp"
                   alt="Arbitrage Dashboard"
                   className="w-full h-auto rounded-lg shadow-xl"
                 />

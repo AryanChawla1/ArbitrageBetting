@@ -16,8 +16,6 @@ const PrivateRoute = ({ children }) => {
   return session ? children : <Navigate to="/login" replace />;
 };
 
-//TODO: Add Stripe
-//TODO: make buttons functional
 
 const AuthRedirect = () => {
   const { session } = useAuth();

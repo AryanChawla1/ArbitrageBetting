@@ -1,6 +1,6 @@
 import { AuthProvider, useAuth } from "./context/AuthContext";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   Navigate,

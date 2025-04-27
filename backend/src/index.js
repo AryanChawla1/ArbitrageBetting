@@ -32,8 +32,11 @@ wss.on("connection", (ws) => {
 });
 
 async function sendUpdates() {
-  // const data = await prepareData();
-  data = sample;
+  const data = await prepareData();
+  if (data.length == 0) {
+    console.log("No data found");
+    return;
+  }
   clients.forEach((client) => {
     if (client.readyState === WebSocket.OPEN) {
       try {
@@ -68,7 +71,7 @@ async function sendUpdates() {
 // Each request is then 6 credits. So then its 500 / 6 = 83.33 requests a month.
 // 83.33 / 30 = 2.77 requests a day. So then we can make 2 requests a day.
 // So then the delay is 43200000 ms.
-setInterval(sendUpdates, 10000);
+setInterval(sendUpdates, 4320000);
 
 server.listen(port, () => {
   console.log(`Server running on port: ${port}`);

@@ -46,7 +46,7 @@ async function prepareData() {
   var filteredOdds = filterOdds(minOdds);
   console.log(filteredOdds);
   if (filteredOdds.length == 0) {
-    return;
+    return [];
   }
   var finalOdds = getStakesAndAmerican(filteredOdds);
   console.log(finalOdds);

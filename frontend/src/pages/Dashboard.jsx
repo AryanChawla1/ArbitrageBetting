@@ -7,8 +7,9 @@ import { useNavigate } from "react-router-dom";
 
 function Dashboard() {
   const navigate = useNavigate();
+  const websocketUrl = import.meta.env.VITE_WEBSOCKET_URL;
   const { sendMessage, lastMessage, readyState } = useWebSocket(
-    "ws://localhost:3000",
+    websocketUrl,
     {
       onOpen: () => console.log("connected"),
       onClose: () => console.log("disconnected"),

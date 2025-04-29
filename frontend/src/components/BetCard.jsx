@@ -43,7 +43,7 @@ export default function BetCard({ bet }) {
     setLStake(newL.toFixed(2));
     setRStake(newR.toFixed(2));
     setValue(newValue);
-    setProfit((profitPercantage * newValue).toFixed(2));
+    setProfit((profitPercantage * newValue / 100).toFixed(2));
   };
 
   return (
